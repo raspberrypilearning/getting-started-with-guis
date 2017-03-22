@@ -51,20 +51,20 @@ Let's start adding content to the GUI. We will refer to items you can add to a G
     from guizero import App, Text
     ```
 
-    We will ask you to import various types of widget throughout this guide. Each type of widget only needs to be added to the list once, and then you can use it as many times as you want on your GUI.
+    We will ask you to import various types of widget throughout this guide. Each type of widget only needs to be added to the import list once, and then you can use it as many times as you want on your GUI.
 
 1. All widgets must be added inside the **event loop**, which means between the line of code where you create the app, and the `app.display()` line of code:
 
-    ![Event loop](images/eventloop.png)
+    ![Event loop](images/event-loop.png)
 
     This is because the line of code `app.display()` starts the **event loop**. The GUI will be waiting for the user to do things such as click on a button - these are called **events**. The GUI will constantly check whether anything new has happened and automatically update the display if necessary. If widgets are not placed within the event loop, they will not appear on the GUI or work properly.
 
-    Throughout this guide, we will ask you to add widgets **inside the event loop**.
+    Throughout this guide, we will ask you to add widgets **inside the event loop** which means anywhere between these two lines of code.
 
 
 ## Text widget
 
-Probably the simplest widget you can add is the Text widget. This simply displays a piece of text on the screen.
+Probably the simplest widget you can add is the Text widget, which displays some text on the screen.
 
 1. Add `Text` to the import statement (read step 1 of the "Adding widgets" section if you are not sure how to do this).
 
@@ -74,27 +74,27 @@ Probably the simplest widget you can add is the Text widget. This simply display
     welcome_message = Text(app, text="Welcome to my app")
     ```
 
-    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object which we created earlier. The first argument given to any widget always tells it the name of its boss. The second argument tells the widget that we want the text displayed to be "Welcome to my app".
+    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object which we created earlier. The first argument given to any widget always tells it the name of its boss (or 'master'). The second argument tells the widget that we want the text displayed to be "Welcome to my app".
 
 1. Save and run your code by pressing F5. You should see this text displayed on your GUI.
 
     ![Text widget](images/app-welcome.png)
 
-1. Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a keyword argument, because we have specified the key word `text` and the value we want. We can specify other key word parameters too, just add them on to the end, separated by commas.
+1. Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a keyword argument, because we have specified the key word `text` and the value we want. We can specify other key word arguments too, just add them on to the end, separated by commas.
 
     ```python
     welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")
     ```
 
-    Here, we have used keyword arguments for the `size`, `font` and `color` (note the American spelling).
+    Here, we have used keyword arguments for the `size`, `font` and `color` (note the American spelling!).
 
     ![Text widget](images/app-welcome.png)
 
-    You can specify any font your computer has installed and colours can be specified either as colour names (for predefined colours) or as hex codes.
+    You can specify any font your computer has installed and colours can be specified either as colour names (for predefined colours) or as hex codes (e.g. #ff0000).
 
 ## TextBox widget
 
-TextBox widgets are used to let the user type in data - a bit like the `input()` function you may have used before. Here's how to add one.
+TextBox widgets are used to let the user type in data - a bit like the GUI version of the `input()` function you may have used before. Here's how to add one.
 
 1. Add the `TextBox` widget to your import statement
 
@@ -150,7 +150,7 @@ A slider lets users move within a range of values easily, rather like moving a v
         welcome_message.font_size(slider_value)
     ```
 
-    This function has a parameter called `slider_value`. When the slider is moved, the current value of the slider will **automatically be sent to the function**, so there must be at minimum one parameter specified. We have chosen to call this parameter `slider_value`. The function sets the `font_size` of the `Text` widget to be the slider value.
+    This function has a parameter called `slider_value`. When the slider is moved, the current value of the slider will **automatically be sent to the function**, so we must give it a name. We have chosen to call this parameter `slider_value`. The code inside the function sets the `font_size` of the `welcome_message` to the current slider value.
 
 1. Add the `Slider` widget to your import statement.
 
