@@ -4,15 +4,13 @@ In this resource you will learn how to make simple GUIs in Python
 
 ## What is a GUI?
 
-GUI stands for **G**raphical **U**ser **,** and it is pronounced "gooey". If you have written Python programs before, all of your input and output will probably have been done via text appearing on the screen or being typed in by the user. Adding a GUI to your program lets the user interact with it using buttons, drop downs, text boxes, menus and other familiar user interface controls.
+GUI stands for **G**raphical **U**ser **I**nterface and it is pronounced "gooey". If you have written Python programs before, all of your input and output will probably have been done via text appearing on the screen or being typed in by the user. Adding a GUI to your program lets the user interact with it using buttons, drop downs, text boxes, menus and other familiar user interface controls.
 
 ## Getting started
 
 Before you start, make sure that you have installed the **guizero** library using the [software installation instructions](software.md).
 
 1. Open up Python 3 (IDLE)
-
-    ![Python 3](images/python3-app-menu.png)
 
 1. Click on File > New File and save your file as `gui_test.py`
 
@@ -120,7 +118,7 @@ PushButton widgets are there to be pressed! Pressing a button causes a function 
     ```
 
     This function refers to the `Text` widget (`welcome_message`) and sets its value to what was typed into the `TextBox` widget (`my_name`).
-    You can use the `get()` and `set()` functions with many widgets to retrieve their current value and set it to something new.
+    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set it to something new.
 
 1. Add the `PushButton` widget to your import statement.
 
@@ -132,7 +130,7 @@ PushButton widgets are there to be pressed! Pressing a button causes a function 
 
     The first argument tells the PushButton that the app is its boss. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
 
-1. Save the file and press F5 to run it. Type your name into the text box and then press the button. You should see your name displayed in the text widget.
+1. Save the file and press F5 to run it. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
 
     ![Display my name](images/display-my-name.png)
 
@@ -154,13 +152,13 @@ A slider lets users move within a range of values easily, rather like moving a v
 
 1. Add the `Slider` widget to your import statement.
 
-1. Add code **inside the event loop** to create the `Slider` widget:
+1. Add this code **inside the event loop** to create the `Slider` widget:
 
     ```python
     font_size = Slider(app, command=change_text_size, start=10, end=80)
     ```
 
-    The `command` is the function that will be called when the slider is moved, i.e. the function we just wrote. Start and end values are specified for the biggest and smallest values the slider can have. We have specified these so that the font does not get too small - the smallest it can go is 10pt and the largest is 80pt.
+    The `command` is the function that will be called when the slider is moved (i.e. the function we just wrote). `start` and `end` values are specified for the largest and smallest values the slider can have. We have specified these so that the font does not get too large or small - the smallest it can go is 10pt and the largest is 80pt.
 
 1. Save your code and press F5 to run it. Move the slider from side to side and watch the size of the text change.
 
@@ -171,7 +169,7 @@ A slider lets users move within a range of values easily, rather like moving a v
 
 You can add pictures to your GUI, as long as they are in GIF format. Sadly, animated gifs will only display as stills.
 
-1. Find a picture in GIF format that you would like to use. Save the picture in the same folder as your `gui_test.py` Python file.
+1. Find a picture in GIF format that you would like to use, or save an existing picture as a GIF. Save the picture in the same folder as your `gui_test.py` Python file.
 
 1. Add the `Picture` widget to your import statement.
 
@@ -188,6 +186,6 @@ You can add pictures to your GUI, as long as they are in GIF format. Sadly, anim
 
 ## What next?
 
-You have now learnt how to use some simple GUI widgets. The full code for this part of the guide can be found [here](code/test_gui.py) if you want to see a full working example.
+You have now learnt how to use some simple GUI widgets. The full code for this part of the guide can be found [here](code/gui_test.py) if you want to see a full working example.
 
 Head over to [worksheet 2](worksheet2.md) to master some more complicated GUI widgets.
