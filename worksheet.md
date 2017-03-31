@@ -8,7 +8,7 @@ GUI stands for **G**raphical **U**ser **I**nterface and it is pronounced "gooey"
 
 ## Getting started
 
-Before you start, make sure that you have installed the **guizero** library using the [software installation instructions](software.md).
+Before you start, make sure that you have installed the **guizero** library.
 
 1. Open up Python 3 (IDLE)
 
@@ -55,9 +55,9 @@ Let's start adding content to the GUI. We will refer to items you can add to a G
 
     ![Event loop](images/event-loop.png)
 
-    This is because the line of code `app.display()` starts the **event loop**. The GUI will be waiting for the user to do things such as click on a button - these are called **events**. The GUI will constantly check whether anything new has happened and automatically update the display if necessary. The event loop **blocks** (rather like a `while True:` loop), so code written after the event loop will never execute.
+    This is because the line of code `app.display()` starts the **event loop**. The GUI will be waiting for the user to do things such as click on a button - these are called **events**. It will constantly check whether anything new has happened and automatically update the display if necessary. The event loop **blocks** (rather like a `while True:` loop), so code written after the event loop will never execute.
 
-    Throughout this guide, we will ask you to add widgets **on the GUI** which means anywhere between these two lines of code.
+    Throughout this guide, we will ask you to add widgets to the GUI which means anywhere between these two lines of code.
 
 
 ## Text widget
@@ -66,19 +66,19 @@ Probably the simplest widget you can add is the Text widget, which displays some
 
 1. Add `Text` to the import statement (read step 1 of the "Adding widgets" section if you are not sure how to do this).
 
-1. **On the GUI** create a `Text` widget like this (read step 2 of the "Adding widgets" section if you are not sure where to put this code)
+1. Add a `Text` widget to the GUI (read step 2 of the "Adding widgets" section if you are not sure where to put this code)
 
     ```python
     welcome_message = Text(app, text="Welcome to my app")
     ```
 
-    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object which we created earlier. The first argument given to any widget always tells it the name of its boss (or 'master'). The second argument tells the widget that we want the text displayed to be "Welcome to my app".
+    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object which we created earlier. The first argument given to any widget always tells it the name of its boss (or 'master').
 
-1. Save and run your code by pressing F5. You should see this text displayed on your GUI.
+1. Run your code by pressing F5. You should see this text displayed on your GUI.
 
     ![Text widget](images/app-welcome.png)
 
-1. Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a keyword argument, because we have specified the key word `text` and the value we want. We can specify other key word arguments too, just add them on to the end, separated by commas.
+1. Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a keyword argument, because we have specified the keyword `text` and the value we want. We can specify other keyword arguments too, just add them on to the end, separated by commas.
 
     ```python
     welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")
@@ -88,7 +88,7 @@ Probably the simplest widget you can add is the Text widget, which displays some
 
     ![Text widget](images/app-welcome.png)
 
-    You can specify any font your computer has installed and colours can be specified either as colour names (for predefined colours) or as hex codes (e.g. #ff0000).
+    You can specify any font your computer has installed. Colours can be specified as colour names, but not every possible colour has a name, so you can also use hex codes (e.g. #ff0000) to define colours.
 
 ## TextBox widget
 
@@ -96,21 +96,21 @@ TextBox widgets are used to let the user type in data - a bit like the GUI versi
 
 1. Add the `TextBox` widget to your import statement
 
-1. **On the GUI**, create a `TextBox` like this:
+1. Add a `TextBox` to the GUI:
 
     ```python
     my_name = TextBox(app)
     ```
 
-1. Save your program and press F5 to run it. You should see a small text box appear. There is a keyword parameter `width` which you can use if you wish to make the box wider.
+1. Run your code by pressing F5. You should see a small text box appear. There is a keyword parameter `width` which you can add if you wish to make the box wider.
 
     ![TextBox widget](images/text-box.png)
 
 ## PushButton widget
 
-PushButton widgets are there to be pressed! Pressing a button causes a function to be called.
+PushButton widgets create a button. When the button is pushed, a function is called.
 
-1. **Before** the code which creates the GUI app, write a function which will be called when the button is pressed. It is a good idea to put your function at the start of your program, immediately after the `import` line.
+1. **Before** the code which creates the GUI app, write a function which will be called when the button is pressed. It is a good idea to put all of your function code at the start of your program, immediately after the `import` line.
 
     ```python
     def say_my_name():
@@ -122,7 +122,7 @@ PushButton widgets are there to be pressed! Pressing a button causes a function 
 
 1. Add the `PushButton` widget to your import statement.
 
-1. On the GUI create a `PushButton` like this:
+1. Add a `PushButton` to the GUI:
 
     ```python
     update_text = PushButton(app, command=say_my_name, text="Display my name")
@@ -130,7 +130,7 @@ PushButton widgets are there to be pressed! Pressing a button causes a function 
 
     The first argument tells the PushButton that the app is its boss. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
 
-1. Save the file and press F5 to run it. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
+1. Press F5 to run your code. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
 
     ![Display my name](images/display-my-name.png)
 
@@ -152,10 +152,10 @@ A slider lets users move within a range of values easily, rather like moving a v
 
 1. Add the `Slider` widget to your import statement.
 
-1. Add this code on the GUI to create the `Slider` widget:
+1. Add a `Slider` to the GUI:
 
     ```python
-    font_size = Slider(app, command=change_text_size, start=10, end=80)
+    text_size = Slider(app, command=change_text_size, start=10, end=80)
     ```
 
     The `command` is the function that will be called when the slider is moved (i.e. the function we just wrote). `start` and `end` values are specified for the largest and smallest values the slider can have. We have specified these so that the font does not get too large or small - the smallest it can go is 10pt and the largest is 80pt.
@@ -173,13 +173,13 @@ You can add pictures to your GUI, as long as they are in GIF format. Sadly, anim
 
 1. Add the `Picture` widget to your import statement.
 
-1. Add code on the GUI to create the `Picture` widget.
+1. Add a `Picture` to the GUI:
 
     ```python
     my_cat = Picture(app, image="cat.gif")
     ```
 
-1. Save your code and press F5 to run it. You should see your picture appear on the GUI.
+1. Press F5 to run iyour code. You should see your picture appear on the GUI.
 
     ![Display a picture](images/picture-gui.png)
 
