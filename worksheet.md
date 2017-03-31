@@ -51,13 +51,13 @@ Let's start adding content to the GUI. We will refer to items you can add to a G
 
     We will ask you to import various types of widget throughout this guide. Each type of widget only needs to be added to the import list once, and then you can use it as many times as you want on your GUI.
 
-1. All widgets must be added inside the **event loop**, which means between the line of code where you create the app, and the `app.display()` line of code:
+1. All code that creates a widget must be added before the **event loop**, which means between the line of code where you create the app, and the `app.display()` line of code:
 
     ![Event loop](images/event-loop.png)
 
-    This is because the line of code `app.display()` starts the **event loop**. The GUI will be waiting for the user to do things such as click on a button - these are called **events**. The GUI will constantly check whether anything new has happened and automatically update the display if necessary. If widgets are not placed within the event loop, they will not appear on the GUI or work properly.
+    This is because the line of code `app.display()` starts the **event loop**. The GUI will be waiting for the user to do things such as click on a button - these are called **events**. The GUI will constantly check whether anything new has happened and automatically update the display if necessary. The event loop **blocks** (rather like a `while True:` loop), so code written after the event loop will never execute.
 
-    Throughout this guide, we will ask you to add widgets **inside the event loop** which means anywhere between these two lines of code.
+    Throughout this guide, we will ask you to add widgets **on the GUI** which means anywhere between these two lines of code.
 
 
 ## Text widget
@@ -66,7 +66,7 @@ Probably the simplest widget you can add is the Text widget, which displays some
 
 1. Add `Text` to the import statement (read step 1 of the "Adding widgets" section if you are not sure how to do this).
 
-1. **Inside the event loop** create a `Text` widget like this (read step 2 of the "Adding widgets" section if you are not sure where to put this code)
+1. **On the GUI** create a `Text` widget like this (read step 2 of the "Adding widgets" section if you are not sure where to put this code)
 
     ```python
     welcome_message = Text(app, text="Welcome to my app")
@@ -96,7 +96,7 @@ TextBox widgets are used to let the user type in data - a bit like the GUI versi
 
 1. Add the `TextBox` widget to your import statement
 
-1. Inside the event loop, create a `TextBox` like this:
+1. **On the GUI**, create a `TextBox` like this:
 
     ```python
     my_name = TextBox(app)
@@ -110,7 +110,7 @@ TextBox widgets are used to let the user type in data - a bit like the GUI versi
 
 PushButton widgets are there to be pressed! Pressing a button causes a function to be called.
 
-1. **Outside** the event loop, write a function which will be called when the button is pressed. It is a good idea to put your function at the start of your program, immediately after the `import` line.
+1. **Before** the code which creates the GUI app, write a function which will be called when the button is pressed. It is a good idea to put your function at the start of your program, immediately after the `import` line.
 
     ```python
     def say_my_name():
@@ -122,7 +122,7 @@ PushButton widgets are there to be pressed! Pressing a button causes a function 
 
 1. Add the `PushButton` widget to your import statement.
 
-1. Inside the event loop, create a `PushButton` like this:
+1. On the GUI create a `PushButton` like this:
 
     ```python
     update_text = PushButton(app, command=say_my_name, text="Display my name")
@@ -141,7 +141,7 @@ PushButton widgets are there to be pressed! Pressing a button causes a function 
 
 A slider lets users move within a range of values easily, rather like moving a volume switch up or down.
 
-1. **Outside** the event loop, write a function which will be called when the slider is moved.
+1. Before the code which creates the GUI app, write a function which will be called when the slider is moved.
 
     ```python
     def change_text_size(slider_value):
@@ -152,7 +152,7 @@ A slider lets users move within a range of values easily, rather like moving a v
 
 1. Add the `Slider` widget to your import statement.
 
-1. Add this code **inside the event loop** to create the `Slider` widget:
+1. Add this code on the GUI to create the `Slider` widget:
 
     ```python
     font_size = Slider(app, command=change_text_size, start=10, end=80)
@@ -173,7 +173,7 @@ You can add pictures to your GUI, as long as they are in GIF format. Sadly, anim
 
 1. Add the `Picture` widget to your import statement.
 
-1. Add code **inside the event loop** to create the `Picture` widget.
+1. Add code on the GUI to create the `Picture` widget.
 
     ```python
     my_cat = Picture(app, image="cat.gif")

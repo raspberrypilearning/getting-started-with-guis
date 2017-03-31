@@ -27,7 +27,7 @@ The `Combo` widget allows you to select an option from a drop down list.
 
 1. Add the `Combo` widget to your import statement.
 
-1. Inside the event loop, create a `Combo` like this:
+1. On the GUI create a `Combo` like this:
 
     ```python
     film_choice = Combo(app, options=["Star Wars", "Indiana Jones", "Batman"], grid=[0,1])
@@ -39,7 +39,7 @@ The `Combo` widget allows you to select an option from a drop down list.
 
 1. Save your code and press F5 to run it. Note that the Combo appears in the very top left of the screen even though we specified its grid position as [0,1]. This is because empty grid squares have no height or width, so as grid square [0,0] is empty, it effectively doesn't exist.
 
-1. Add a `Text` widget in grid square [0,0] to provide some description of what the person will be selecting using the `Combo`:
+1. On the GUI, add a `Text` widget in grid square [0,0] to provide some description of what the person will be selecting using the `Combo`:
 
     ```python
     film_description = Text(app, text="Which film would you like to see?", grid=[0,0])
@@ -55,7 +55,7 @@ The `CheckBox` widget allows you to select or unselect a true or false option.
 
 1. Add the `CheckBox` widget to your import statement
 
-1. Inside the event loop, create a `CheckBox` widget like this:
+1. On the GUI create a `CheckBox` widget like this:
 
     ```python
     vip_seat = CheckBox(app, text="VIP seat?", grid=[1,1])
@@ -72,6 +72,4 @@ The `ButtonGroup` widget allows you to create a group of radio buttons so that y
 
 1. Add the `ButtonGroup` widget to your import statement
 
-1. Inside the event loop, create a `ButtonGroup` widget like this:
-
-    
+1. On the GUI, create a `ButtonGroup` widget like this:
