@@ -1,10 +1,10 @@
 # Getting started with GUIs
 
-In this resource you will learn how to make simple GUIs in Python
+In this resource you will learn how to make simple GUIs in Python.
 
 ## What is a GUI?
 
-GUI stands for **G**raphical **U**ser **I**nterface and it is pronounced "gooey". If you have written Python programs before, all of your input and output will probably have been done via text appearing on the screen or being typed in by the user. Adding a GUI to your program lets the user interact with it using buttons, drop downs, text boxes, menus and other familiar user interface controls.
+GUI stands for Graphical User Interface and it is pronounced 'gooey'. If you have written Python programs before, all of your input and output will probably have been dealt with via text appearing on the screen or being typed in by the user. Adding a GUI to your program lets the user interact with it using buttons, drop downs, text boxes, menus and other familiar user interface controls.
 
 ## Getting started
 
@@ -57,22 +57,22 @@ Let's start adding content to the GUI. We will refer to items you can add to a G
 
     This is because the line of code `app.display()` starts the **event loop**. The GUI will be waiting for the user to do things such as click on a button - these are called **events**. It will constantly check whether anything new has happened and automatically update the display if necessary. The event loop **blocks** (rather like a `while True:` loop), so code written after the event loop will never execute.
 
-    Throughout this guide, we will ask you to add widgets to the GUI which means anywhere between these two lines of code.
+    Throughout this guide, we will ask you to add widgets to the GUI, which means adding them anywhere between these two lines of code.
 
 
 ## Text widget
 
-Probably the simplest widget you can add is the Text widget, which displays some text on the screen.
+Probably the simplest widget you can add is the **Text** widget, which displays some text on the screen.
 
-1. Add `Text` to the import statement (read step 1 of the "Adding widgets" section if you are not sure how to do this).
+1. Add `Text` to the import statement (read step 1 of the 'Adding widgets' section if you are not sure how to do this).
 
-1. Add a `Text` widget to the GUI (read step 2 of the "Adding widgets" section if you are not sure where to put this code)
+1. Add a `Text` widget to the GUI (read step 2 of the 'Adding widgets' section if you are not sure where to put this code)
 
     ```python
     welcome_message = Text(app, text="Welcome to my app")
     ```
 
-    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object which we created earlier. The first argument given to any widget always tells it the name of its boss (or 'master').
+    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object, which we created earlier. The first argument given to any widget always tells it the name of its boss (or 'master').
 
 1. Run your code by pressing F5. You should see this text displayed on your GUI.
 
@@ -92,9 +92,9 @@ Probably the simplest widget you can add is the Text widget, which displays some
 
 ## TextBox widget
 
-TextBox widgets are used to let the user type in data - a bit like the GUI version of the `input()` function you may have used before. Here's how to add one.
+**TextBox** widgets are used to let the user type in data - a bit like the GUI version of the `input()` function you may have used before. Here's how to add one:
 
-1. Add the `TextBox` widget to your import statement
+1. Add the `TextBox` widget to your import statement.
 
 1. Add a `TextBox` to the GUI:
 
@@ -108,7 +108,7 @@ TextBox widgets are used to let the user type in data - a bit like the GUI versi
 
 ## PushButton widget
 
-PushButton widgets create a button. When the button is pushed, a function is called.
+**PushButton** widgets create a button. When the button is pushed, a function is called.
 
 1. **Before** the code which creates the GUI app, write a function which will be called when the button is pressed. It is a good idea to put all of your function code at the start of your program, immediately after the `import` line.
 
@@ -118,7 +118,7 @@ PushButton widgets create a button. When the button is pushed, a function is cal
     ```
 
     This function refers to the `Text` widget (`welcome_message`) and sets its value to what was typed into the `TextBox` widget (`my_name`).
-    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set it to something new.
+    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set them to something new.
 
 1. Add the `PushButton` widget to your import statement.
 
@@ -134,12 +134,12 @@ PushButton widgets create a button. When the button is pushed, a function is cal
 
     ![Display my name](images/display-my-name.png)
 
-    You have now experienced the basis of how the event loop works. The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
+    You have now experienced the basis for how the event loop works. The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
 
 
 ## Slider widget
 
-A slider lets users move within a range of values easily, rather like moving a volume switch up or down.
+A **slider** lets users move within a range of values easily, rather like moving a volume control up or down.
 
 1. Before the code which creates the GUI app, write a function which will be called when the slider is moved.
 
@@ -158,7 +158,7 @@ A slider lets users move within a range of values easily, rather like moving a v
     text_size = Slider(app, command=change_text_size, start=10, end=80)
     ```
 
-    The `command` is the function that will be called when the slider is moved (i.e. the function we just wrote). `start` and `end` values are specified for the largest and smallest values the slider can have. We have specified these so that the font does not get too large or small - the smallest it can go is 10pt and the largest is 80pt.
+    The `command` is the function that will be called when the slider is moved (i.e. the function we just created). `start` and `end` values are specified for the largest and smallest values the slider can have. We have specified these so that the font does not get too large or small - the smallest it can be is 10pt and the largest is 80pt.
 
 1. Save your code and press F5 to run it. Move the slider from side to side and watch the size of the text change.
 
