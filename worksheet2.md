@@ -34,7 +34,7 @@ The **Combo** widget allows you to select an option from a drop-down list.
     ```
 
     - We have specified the `app` parameter as usual to tell the Combo that the app is its master.
-    - The `options` argument is a list of options we wish to display in the `Combo` widget
+    - The `options` argument is a list of options we wish to display in the `Combo` widget.
     - Because we specified `layout=grid` in the app, we have to now include a `grid` argument with each widget, to tell it where to appear. The grid argument should be a list containing [x,y] values for where you would like the widget to appear on the grid, with [0,0] on the grid being the top left corner. We can also align the widget within the grid square, in this case on the left.
 
 1. Save your code and press F5 to run it. Note that the Combo appears in the very top left of the screen even though we specified its grid position as [0,1]. This is because empty grid squares have no height or width, so as grid square [0,0] is empty, it effectively doesn't exist.
@@ -82,12 +82,12 @@ The **ButtonGroup** widget allows you to create a group of radio buttons so that
     ```
 
     Let's look at this more closely:
-    - `app` tells the buttons that the app is their boss
+    - `app` tells the buttons that the app is their boss.
     - `options` is a list of options which will appear as buttons. Each option is also a list containing the text that will appear, and a hidden value associated with that option.
-    - `selected` tells the buttons which one is selected to begin with
-    - `horizontal` tells the buttons to display in a horizontal line
-    - `grid` is where these buttons will be placed on the grid
-    - `align` says to position the buttons on the left of the grid square
+    - `selected` tells the buttons which one is selected to begin with.
+    - `horizontal` tells the buttons to display in a horizontal line.
+    - `grid` is where these buttons will be placed on the grid.
+    - `align` says to position the buttons on the left of the grid square.
 
     We have also added another `Text` widget in `[2,0]` to explain what the buttons are for.
 
@@ -105,7 +105,7 @@ The **ButtonGroup** widget allows you to create a group of radio buttons so that
 
     ![Booking button](images/booking-button.png)
 
-1. Add `info` (all lowercase) to the import statement to allow us to use the info box function from guizero.
+1. Add `info` (all lower case) to the import statement to allow us to use the info box function from guizero.
 
 1. **Outside** the GUI, write the function `do_booking()`. This will pop up an information box.
 
