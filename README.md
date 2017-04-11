@@ -2,7 +2,7 @@
 
 ![](cover.png)
 
-In this resource you will learn how to make simple GUIs in Python
+In this resource you will learn how to make simple GUIs in Python.
 
 ## Licence
 
