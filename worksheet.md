@@ -10,17 +10,17 @@ GUI stands for Graphical User Interface and it is pronounced 'gooey'. If you hav
 
 Before you start, make sure that you have installed the **guizero** library.
 
-1. Open up Python 3 (IDLE)
+1. Open up Python 3 (IDLE).
 
-1. Click on File > New File and save your file as `gui_test.py`
+1. Click on File > New File and save your file as `gui_test.py`.
 
-1. Add a line of code at the start of your file to import the App class from the guizero library
+1. Add a line of code at the start of your file to import the App class from the guizero library:
 
     ```python
     from guizero import App
     ```
 
-1. Now add two more lines of code to create an `App` and then display it on the screen
+1. Now add two more lines of code to create an `App` and then display it on the screen:
 
     ```python
     app = App(title="Hello world")
@@ -66,7 +66,7 @@ Probably the simplest widget you can add is the **Text** widget, which displays 
 
 1. Add `Text` to the import statement (read step 1 of the 'Adding widgets' section if you are not sure how to do this).
 
-1. Add a `Text` widget to the GUI (read step 2 of the 'Adding widgets' section if you are not sure where to put this code)
+1. Add a `Text` widget to the GUI (read step 2 of the 'Adding widgets' section if you are not sure where to put this code):
 
     ```python
     welcome_message = Text(app, text="Welcome to my app")
