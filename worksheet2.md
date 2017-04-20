@@ -95,7 +95,7 @@ The **ButtonGroup** widget allows you to create a group of radio buttons so that
 
     ![Button Group demo](images/button-group.png)
 
-# Finishing the program
+## Finishing the program
 
 1. Finally, add `PushButton` to the import list, then add a `PushButton` widget in `[3,1]` which calls a function called `do_booking` when it is pressed.
 
