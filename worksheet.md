@@ -179,7 +179,7 @@ You can add pictures to your GUI, as long as they are in GIF format. Sadly, anim
     my_cat = Picture(app, image="cat.gif")
     ```
 
-1. Press F5 to run iyour code. You should see your picture appear on the GUI.
+1. Press F5 to run your code. You should see your picture appear on the GUI.
 
     ![Display a picture](images/picture-gui.png)
 
