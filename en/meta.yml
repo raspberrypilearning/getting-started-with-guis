@@ -1,0 +1,35 @@
+---
+title: Getting started with GUIs
+hero_image: images/banner.png
+description: In this resource you will learn how to make simple GUIs in Python
+original_url: https://raspberrypi.org/learning/getting-started-with-guis
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Getting started with GUIs
+- title: What is a GUI?
+- title: Getting started
+- title: Adding widgets
+- title: Text widget
+- title: TextBox widget
+- title: PushButton widget
+- title: Slider widget
+- title: Picture widget
+- title: What next?
+- title: Getting started with GUIs (part 2)
+- title: Getting started
+- title: Combo widget
+- title: CheckBox widget
+- title: ButtonGroup widget
+- title: Finishing the program
+- title: What next?
+
