@@ -1,28 +1,19 @@
-## Slider widget
+## Picture widget
 
-A **slider** lets users move within a range of values easily, rather like moving a volume control up or down.
+You can add pictures to your GUI, as long as they are in GIF format. Sadly, animated gifs will only display as stills.
 
-- Before the code which creates the GUI app, write a function which will be called when the slider is moved.
+- Find a picture in GIF format that you would like to use, or save an existing picture as a GIF. Save the picture in the same folder as your `gui_test.py` Python file.
 
-    ```python
-    def change_text_size(slider_value):
-        welcome_message.font_size(slider_value)
-    ```
+- Add the `Picture` widget to your import statement.
 
-    This function has a parameter called `slider_value`. When the slider is moved, the current value of the slider will **automatically be sent to the function**, so we must give it a name. We have chosen to call this parameter `slider_value`. The code inside the function sets the `font_size` of the `welcome_message` to the current slider value.
-
-- Add the `Slider` widget to your import statement.
-
-- Add a `Slider` to the GUI:
+- Add a `Picture` to the GUI:
 
     ```python
-    text_size = Slider(app, command=change_text_size, start=10, end=80)
+    my_cat = Picture(app, image="cat.gif")
     ```
 
-    The `command` is the function that will be called when the slider is moved (i.e. the function we just created). `start` and `end` values are specified for the largest and smallest values the slider can have. We have specified these so that the font does not get too large or small - the smallest it can be is 10pt and the largest is 80pt.
+- Press F5 to run iyour code. You should see your picture appear on the GUI.
 
-- Save your code and press F5 to run it. Move the slider from side to side and watch the size of the text change.
-
-    ![Using a slider](images/slider-display.png)
+    ![Display a picture](images/picture-gui.png)
 
 

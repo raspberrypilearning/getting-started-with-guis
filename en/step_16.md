@@ -1,19 +1,34 @@
-## CheckBox widget
+## Finishing the program
 
-The **CheckBox** widget allows you to select or unselect a true or false option.
-
-- Add the `CheckBox` widget to your import statement.
-
-- Add a `CheckBox` widget to the GUI:
+- Finally, add `PushButton` to the import list, then add a `PushButton` widget in `[3,1]` which calls a function called `do_booking` when it is pressed.
 
     ```python
-    vip_seat = CheckBox(app, text="VIP seat?", grid=[1,1], align="left")
+    book_seats = PushButton(app, command=do_booking, text="Book seat", grid=[3,1], align="left")
     ```
 
-    We also chose to add a `Text` widget in grid `[1,0]` to explain what the checkbox is for.
+    ![Booking button](images/booking-button.png)
 
-- Press F5 to run your code. You should see the checkbox appear and be able to tick and untick it.
+- Add `info` (all lower case) to the import statement to allow us to use the info box function from guizero.
 
-    ![CheckBox demo](images/checkbox-demo.png)
+- **Outside** the GUI, write the function `do_booking()`. This will pop up an information box.
+
+    ```python
+    def do_booking():
+        info("Booking", "Thank you for booking")
+    ```
+
+    ![Info box](images/info-box.png)
+
+- You probably want to know how to retrieve the options the user chose. Add this code to your `do_booking()` function:
+
+    ```python
+    print( film_choice.get() )
+    print( vip_seat.get_value() )
+    print( row_choice.get() )
+    ```
+
+    Notice that the `CheckBox` returns `0` if it is not checked and `1` if it is checked, and the `ButtonGroup` returns the hidden value (`F`, `M` or `B`) rather than the full text.
+
+    ![Return values](images/return-values.png)
 
 

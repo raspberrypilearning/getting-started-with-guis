@@ -1,19 +1,6 @@
-## Picture widget
+## Review 
 
-You can add pictures to your GUI, as long as they are in GIF format. Sadly, animated gifs will only display as stills.
+You have now learnt how to use some simple GUI widgets. The full code for this part of the guide can be found [here](resources/gui_test.py) if you want to see a full working example.
 
-- Find a picture in GIF format that you would like to use, or save an existing picture as a GIF. Save the picture in the same folder as your `gui_test.py` Python file.
-
-- Add the `Picture` widget to your import statement.
-
-- Add a `Picture` to the GUI:
-
-    ```python
-    my_cat = Picture(app, image="cat.gif")
-    ```
-
-- Press F5 to run iyour code. You should see your picture appear on the GUI.
-
-    ![Display a picture](images/picture-gui.png)
-
+Now let's look at some more complicated GUI widgets: combo boxes, check boxes, radio buttons and the menu bar. We will make a simple cinema booking GUI to demonstrate these widgets.
 

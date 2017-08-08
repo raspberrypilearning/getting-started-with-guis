@@ -1,16 +1,31 @@
-## TextBox widget
+## PushButton widget
 
-**TextBox** widgets are used to let the user type in data - a bit like the GUI version of the `input()` function you may have used before. Here's how to add one:
+**PushButton** widgets create a button. When the button is pushed, a function is called.
 
-- Add the `TextBox` widget to your import statement.
-
-- Add a `TextBox` to the GUI:
+- **Before** the code which creates the GUI app, write a function which will be called when the button is pressed. It is a good idea to put all of your function code at the start of your program, immediately after the `import` line.
 
     ```python
-    my_name = TextBox(app)
+    def say_my_name():
+        welcome_message.set( my_name.get() )
     ```
 
-- Run your code by pressing F5. You should see a small text box appear. There is a keyword parameter `width` which you can add if you wish to make the box wider.
+    This function refers to the `Text` widget (`welcome_message`) and sets its value to what was typed into the `TextBox` widget (`my_name`).
+    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set them to something new.
 
-    ![TextBox widget](images/text-box.png)
+- Add the `PushButton` widget to your import statement.
+
+- Add a `PushButton` to the GUI:
+
+    ```python
+    update_text = PushButton(app, command=say_my_name, text="Display my name")
+    ```
+
+    The first argument tells the PushButton that the app is its boss. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
+
+- Press F5 to run your code. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
+
+    ![Display my name](images/display-my-name.png)
+
+    You have now experienced the basis for how the event loop works. The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
+
 

@@ -1,31 +1,28 @@
-## PushButton widget
+## Slider widget
 
-**PushButton** widgets create a button. When the button is pushed, a function is called.
+A **slider** lets users move within a range of values easily, rather like moving a volume control up or down.
 
-- **Before** the code which creates the GUI app, write a function which will be called when the button is pressed. It is a good idea to put all of your function code at the start of your program, immediately after the `import` line.
-
-    ```python
-    def say_my_name():
-        welcome_message.set( my_name.get() )
-    ```
-
-    This function refers to the `Text` widget (`welcome_message`) and sets its value to what was typed into the `TextBox` widget (`my_name`).
-    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set them to something new.
-
-- Add the `PushButton` widget to your import statement.
-
-- Add a `PushButton` to the GUI:
+- Before the code which creates the GUI app, write a function which will be called when the slider is moved.
 
     ```python
-    update_text = PushButton(app, command=say_my_name, text="Display my name")
+    def change_text_size(slider_value):
+        welcome_message.font_size(slider_value)
     ```
 
-    The first argument tells the PushButton that the app is its boss. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
+    This function has a parameter called `slider_value`. When the slider is moved, the current value of the slider will **automatically be sent to the function**, so we must give it a name. We have chosen to call this parameter `slider_value`. The code inside the function sets the `font_size` of the `welcome_message` to the current slider value.
 
-- Press F5 to run your code. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
+- Add the `Slider` widget to your import statement.
 
-    ![Display my name](images/display-my-name.png)
+- Add a `Slider` to the GUI:
 
-    You have now experienced the basis for how the event loop works. The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
+    ```python
+    text_size = Slider(app, command=change_text_size, start=10, end=80)
+    ```
+
+    The `command` is the function that will be called when the slider is moved (i.e. the function we just created). `start` and `end` values are specified for the largest and smallest values the slider can have. We have specified these so that the font does not get too large or small - the smallest it can be is 10pt and the largest is 80pt.
+
+- Save your code and press F5 to run it. Move the slider from side to side and watch the size of the text change.
+
+    ![Using a slider](images/slider-display.png)
 
 

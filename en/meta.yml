@@ -15,7 +15,6 @@ site_areas: ''
 steps:
 - title: Introduction
 - title: What you will need
-- title: Getting started with GUIs
 - title: What is a GUI?
 - title: Getting started
 - title: Adding widgets
@@ -24,9 +23,8 @@ steps:
 - title: PushButton widget
 - title: Slider widget
 - title: Picture widget
-- title: What next?
-- title: Getting started with GUIs (part 2)
-- title: Getting started
+- title: Review
+- title: A new app
 - title: Combo widget
 - title: CheckBox widget
 - title: ButtonGroup widget
