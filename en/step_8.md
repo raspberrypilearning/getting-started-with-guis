@@ -6,11 +6,12 @@
 
     ```python
     def say_my_name():
-        welcome_message.set( my_name.get() )
+        welcome_message.value = my_name.value
     ```
 
-    This function refers to the `Text` widget (`welcome_message`) and sets its value to what was typed into the `TextBox` widget (`my_name`).
-    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set them to something new.
+    This function refers to the `Text` widget (`welcome_message`) and sets its `value` to what was typed into the `TextBox` widget (`my_name`).
+
+    You can use the `value` property with many widgets to retrieve their current value or set it to something new.
 
 - Add the `PushButton` widget to your import statement.
 
@@ -20,7 +21,7 @@
     update_text = PushButton(app, command=say_my_name, text="Display my name")
     ```
 
-    The first argument tells the PushButton that the app is its boss. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
+    The first argument tells the PushButton that the app is its master. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
 
 - Press F5 to run your code. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
 

@@ -10,7 +10,7 @@ Probably the simplest widget you can add is the **Text** widget, which displays 
     welcome_message = Text(app, text="Welcome to my app")
     ```
 
-    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object, which we created earlier. The first argument given to any widget always tells it the name of its boss (or 'master').
+    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object, which we created earlier. The first argument given to any widget always tells it the name of its boss (or *master*).
 
 - Run your code by pressing F5. You should see this text displayed on your GUI.
 

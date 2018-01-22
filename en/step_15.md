@@ -8,7 +8,7 @@ The **ButtonGroup** widget allows you to create a group of radio buttons so that
 
     ```python
     row_choice = ButtonGroup(app, options=[ ["Front", "F"], ["Middle", "M"],["Back", "B"] ],
-    selected="M", horizontal=True, grid=[2,1], align="left")
+    selected="M", horizontal=True, grid=[1,2], align="left")
     ```
 
     Let's look at this more closely:
@@ -19,7 +19,7 @@ The **ButtonGroup** widget allows you to create a group of radio buttons so that
     - `grid` is where these buttons will be placed on the grid.
     - `align` says to position the buttons on the left of the grid square.
 
-    We have also added another `Text` widget in `[2,0]` to explain what the buttons are for.
+    We have also added another `Text` widget in `[0,2]` to explain what the buttons are for.
 
 - Press F5 to run your code. You should see the buttons. The 'middle' option should be selected when the program begins, and you should be able to switch between them.
 
