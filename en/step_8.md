@@ -27,6 +27,33 @@
 
     ![Display my name](images/display-my-name.png)
 
-    You have now experienced the basis for how the event loop works. The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
+--- collapse ---
+
+---
+title: My name didn't appear!
+---
+
+Your code should look like this, the function `say_my_name` is defined near the top of your program after the `import` and the `PushButton` `command` argument has been set to call it.
+
+```python
+from guizero import App, Text, TextBox, PushButton
+
+def say_my_name():
+    welcome_message.value = my_name.value
+
+app = App(title="Hello world")
+
+welcome_message = Text(app, text="Welcome to my app", size=40, font="Times new roman", color="lightblue")
+my_name = TextBox(app, width=30)
+update_text = PushButton(app, command=say_my_name, text="Display my name")
+
+app.display()
+```
+
+--- /collapse ---
+
+You have now experienced the basis for how the event loop works. 
+
+The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
 
 

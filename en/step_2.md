@@ -23,13 +23,13 @@ sudo pip3 install guizero
 
 #### Windows
 
-Ensure pip is installed, open a command prompt and type:
+Ensure `pip` is installed, open a command prompt and type:
 
 ```bash
 python -m pip install -U pip
 ```
 
-With pip installed, on the command prompt type:
+With `pip` installed, on the command prompt type:
 
 ```bash
 pip install guizero

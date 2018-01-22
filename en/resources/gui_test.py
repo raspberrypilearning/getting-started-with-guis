@@ -1,7 +1,7 @@
 from guizero import App, Text, TextBox, PushButton, Slider, Picture
 
 def say_my_name():
-        welcome_message.value = my_name.value
+    welcome_message.value = my_name.value
 
 def change_text_size(slider_value):
     welcome_message.size = slider_value
