@@ -6,11 +6,12 @@
 
     ```python
     def say_my_name():
-        welcome_message.set( my_name.get() )
+        welcome_message.value = my_name.value
     ```
 
-    This function refers to the `Text` widget (`welcome_message`) and sets its value to what was typed into the `TextBox` widget (`my_name`).
-    You can use the `get()` and `set()` functions with many widgets to retrieve their current value or set them to something new.
+    This function refers to the `Text` widget (`welcome_message`) and sets its `value` to what was typed into the `TextBox` widget (`my_name`).
+
+    You can use the `value` property with many widgets to retrieve their current value or set it to something new.
 
 - Add the `PushButton` widget to your import statement.
 
@@ -20,12 +21,39 @@
     update_text = PushButton(app, command=say_my_name, text="Display my name")
     ```
 
-    The first argument tells the PushButton that the app is its boss. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
+    The first argument tells the PushButton that the app is its master. Then we use two keyword arguments - `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
 
 - Press F5 to run your code. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
 
     ![Display my name](images/display-my-name.png)
 
-    You have now experienced the basis for how the event loop works. The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
+--- collapse ---
+
+---
+title: My name didn't appear!
+---
+
+Your code should look like this, the function `say_my_name` is defined near the top of your program after the `import` and the `PushButton` `command` argument has been set to call it.
+
+```python
+from guizero import App, Text, TextBox, PushButton
+
+def say_my_name():
+    welcome_message.value = my_name.value
+
+app = App(title="Hello world")
+
+welcome_message = Text(app, text="Welcome to my app", size=40, font="Times new roman", color="lightblue")
+my_name = TextBox(app, width=30)
+update_text = PushButton(app, command=say_my_name, text="Display my name")
+
+app.display()
+```
+
+--- /collapse ---
+
+You have now experienced the basis for how the event loop works. 
+
+The GUI waits for an event (in this case, you clicking on the button) and it calls a function in response to the event. This function may contain code to change something on the GUI, and if so, the display is updated accordingly.
 
 
