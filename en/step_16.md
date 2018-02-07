@@ -1,9 +1,9 @@
 ## Finishing the program
 
-- Finally, add `PushButton` to the import list, then add a `PushButton` widget in `[3,1]` which calls a function called `do_booking` when it is pressed.
+- Finally, add `PushButton` to the import list, then add a `PushButton` widget in `[1,3]` which calls a function called `do_booking` when it is pressed.
 
     ```python
-    book_seats = PushButton(app, command=do_booking, text="Book seat", grid=[3,1], align="left")
+    book_seats = PushButton(app, command=do_booking, text="Book seat", grid=[1,3], align="left")
     ```
 
     ![Booking button](images/booking-button.png)
@@ -22,9 +22,9 @@
 - You probably want to know how to retrieve the options the user chose. Add this code to your `do_booking()` function:
 
     ```python
-    print( film_choice.get() )
-    print( vip_seat.get_value() )
-    print( row_choice.get() )
+    print( film_choice.value )
+    print( vip_seat.value )
+    print( row_choice.value )
     ```
 
     Notice that the `CheckBox` returns `0` if it is not checked and `1` if it is checked, and the `ButtonGroup` returns the hidden value (`F`, `M` or `B`) rather than the full text.
