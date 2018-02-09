@@ -2,7 +2,7 @@
 
 A `TextBox` widgets allows the user to type in data, a bit like the GUI version of Python's `input()` function, which you may have come across before. Here's how to add one a `TextBox`:
 
-- Add the `TextBox` widget to your import statement.
+- Add the `TextBox` widget to your `import` statement.
 
 - Add a `TextBox` to the GUI:
 
