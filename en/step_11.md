@@ -1,6 +1,6 @@
 ## Review 
 
-You have now learnt how to use some simple GUI widgets. The full code for this part of the guide can be found [here](resources/gui_test.py) if you want to see a full working example.
+You have now learnt how to use simple GUI widgets. This is the full code for this part of the guide:
 
 ```python
 from guizero import App, Text, TextBox, PushButton, Slider, Picture
@@ -22,5 +22,6 @@ my_cat = Picture(app, image="cat.gif")
 app.display()
 ```
 
-Now let's look at some more complicated GUI widgets: combo boxes, check boxes, radio buttons and the menu bar. We will make a simple cinema booking GUI to demonstrate these widgets.
+You can also download a full working example [here](resources/gui_test.py).
 
+Next we'll make a simple GUI for booking cinema tickets to look at some a little more complicated GUI widgets: combo boxes, check boxes, radio buttons, and the menu bar.
