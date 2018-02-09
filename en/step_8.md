@@ -51,4 +51,4 @@ app.display()
 
 --- /collapse ---
 
-The `PushButton` widget is a good example of how the event loop works: the GUI waits for an event (in this case, you clicking on the button), and it calls a function in response to the event. This function may contain code to change something on the GUI, and if it does, the display is updated accordingly.
+The `PushButton` widget is a good example of how the event loop works: the GUI waits for an event (in this case, you clicking the button), and it calls a function in response to the event. This function may contain code to change something on the GUI, and if it does, the display is updated accordingly.
