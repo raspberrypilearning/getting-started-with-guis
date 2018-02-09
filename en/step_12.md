@@ -15,5 +15,5 @@
     app.display()
     ```
 
-    This time, we have used some new keyword arguments: `width` and `height` set the size of the app window, and `layout` allows us to set out our widgets on an invisible grid.
+    Note that we have used some new keyword arguments: `width` and `height` set the size of the app window, and `layout` allows us to set out our widgets on an invisible grid.
 
