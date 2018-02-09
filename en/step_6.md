@@ -2,9 +2,9 @@
 
 Probably the simplest widget you can add is the `Text` widget, which displays some text on the screen.
 
-- Add `Text` to the import statement (check back in the 'Adding widgets' section if you are not sure how to do this).
+- Add `Text` to the `import` statement (check back in the **Adding widgets** section if you are not sure how to do this).
 
-- Add a `Text` widget to the GUI (rcheck back in the 'Adding widgets' section if you are not sure where to put this code):
+- Add a `Text` widget to the GUI (check back in the **Adding widgets** section if you are not sure where to put this code):
 
     ```python
     welcome_message = Text(app, text="Welcome to my app")
