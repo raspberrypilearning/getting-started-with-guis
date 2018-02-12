@@ -12,7 +12,7 @@ The **CheckBox** widget allows you to select or deselect an option.
 
     We also chose to add a `Text` widget in grid `[0,1]` to explain what the checkbox is for.
 
-- Press <kbd>F5</kbd> to run your code. You should see the checkbox, and you should be able to tick and untick it.
+- Press <kbd>F5</kbd> to run your code. You should see the `CheckBox`, and you should be able to tick and untick it.
 
     ![CheckBox demo](images/checkbox-demo.png)
 
