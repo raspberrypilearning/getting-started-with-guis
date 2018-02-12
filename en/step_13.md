@@ -22,7 +22,7 @@ The `Combo` widget allows you to select an option from a drop-down menu.
     film_description = Text(app, text="Which film?", grid=[0,0], align="left")
     ```
 
-    Run the program to check that the `Text` and the `Combo` both display properly.
+    Run the program to check that the `Text` and the `Combo` are both displayed properly.
 
     ![Combo with text](images/combo-with-text.png)
 
