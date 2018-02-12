@@ -8,9 +8,9 @@
 
     ![Booking button](images/booking-button.png)
 
-- Add `info` (all lower case) to the import statement to allow us to use the info box function from guizero.
+- Add `info` (all lower case) to the `import` statement so that you can use the info box function of `guizero`.
 
-- **Outside** the GUI, write the function `do_booking()`. This will pop up an information box.
+- **Outside** the GUI, write the function `do_booking()`. This will make an information box pop up.
 
     ```python
     def do_booking():
@@ -19,7 +19,7 @@
 
     ![Info box](images/info-box.png)
 
-- You probably want to know how to retrieve the options the user chose. Add this code to your `do_booking()` function:
+- You'll probably want to know how to retrieve the options the user chose. Add this code to your `do_booking()` function:
 
     ```python
     print( film_choice.value )
@@ -27,7 +27,7 @@
     print( row_choice.value )
     ```
 
-    Notice that the `CheckBox` returns `0` if it is not checked and `1` if it is checked, and the `ButtonGroup` returns the hidden value (`F`, `M` or `B`) rather than the full text.
+    Note: the `CheckBox` returns `0` if it is not checked and `1` if it is checked, and the `ButtonGroup` returns the hidden value (`F`, `M`, or `B`) rather than the full text.
 
     ![Return values](images/return-values.png)
 
