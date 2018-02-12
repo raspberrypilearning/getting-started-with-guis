@@ -1,6 +1,6 @@
 ## CheckBox widget
 
-The **CheckBox** widget allows you to select or deselect an option.
+The `CheckBox` widget allows you to select or deselect an option.
 
 - Add the `CheckBox` widget to your `import` statement.
 
@@ -15,5 +15,3 @@ The **CheckBox** widget allows you to select or deselect an option.
 - Press <kbd>F5</kbd> to run your code. You should see the `CheckBox`, and you should be able to tick and untick it.
 
     ![CheckBox demo](images/checkbox-demo.png)
-
-
