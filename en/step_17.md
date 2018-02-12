@@ -1,4 +1,4 @@
 ## What next?
 
-Try making your own GUI program. Perhaps you could take an old program you wrote and give it a GUI? 
+Try making your own GUI program. You could choose an old program you've written and create a GUI for it? 
 
