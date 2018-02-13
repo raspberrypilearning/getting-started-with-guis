@@ -24,4 +24,4 @@ app.display()
 
 You can also download a complete working example [here](resources/gui_test.py).
 
-Next we'll make a simple GUI for booking cinema tickets to look at some a little more complicated GUI widgets: combo boxes, check boxes, radio buttons, and the menu bar.
+Next we'll make a simple GUI for booking cinema tickets to look at some a little more complicated GUI widgets: combo menus, check boxes, and radio buttons.
