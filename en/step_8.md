@@ -29,12 +29,16 @@ To keep your script nice and tidy, it is a good idea to put all the code which d
 
     ![Display my name](images/display-my-name.png)
 
---- collapse ---
+--- hints ---
 
----
-title: My name didn't appear!
----
-Make sure that you have defined the function `say_my_name` near the top of your program after the `import` statement, and that you've set the `PushButton` `command` argument to call that function.
+--- hint ---
+
+- Defined a function `say_my_name` near the top of your program after the `import` statement.
+- Set the `PushButton` `command` argument to call that function.
+
+--- /hint ---
+
+--- hint ---
 
 ```python
 from guizero import App, Text, TextBox, PushButton
@@ -51,6 +55,10 @@ update_text = PushButton(app, command=say_my_name, text="Display my name")
 app.display()
 ```
 
---- /collapse ---
+--- /hint ---
+
+--- /hints ---
+
+--- collapse ---
 
 The `PushButton` widget is a good example of how the event loop works: the GUI waits for an event (in this case, you clicking the button), and it calls a function in response to the event. The function may contain code to change something on the GUI, and if it does, the display is updated accordingly.
