@@ -21,4 +21,4 @@
 
     ![First App](images/first-app.png)
 
-Congratulations, you have built your first GUI app!
+Congratulations, you have just built your first GUI app!

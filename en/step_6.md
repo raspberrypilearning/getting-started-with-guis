@@ -10,9 +10,9 @@ Probably the simplest widget you can add is the `Text` widget, which displays so
     welcome_message = Text(app, text="Welcome to my app")
     ```
 
-    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object that we created earlier. The first argument given to any widget always tells it the name of its boss (or master).
+    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object that we created earlier. The first argument given to any widget always tells it the name of its boss.
 
-- Run your code by pressing <kbd>F5</kbd>. You should see this text displayed on your GUI.
+- Run your code by pressing <kbd>F5</kbd>. You should see this text displayed on your GUI:
 
     ![Text widget](images/app-welcome.png)
 
@@ -36,7 +36,7 @@ app.display()
 
 --- /collapse ---
 
-- Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a **keyword argument**, because we have specified the keyword `text` and the value we want. We can specify other keyword arguments too by just adding them after the `text` one and separating them by commas.
+Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a **keyword argument**, because we have specified the keyword `text` and the value we want. We can specify other keyword arguments too by just adding them after the `text` one and separating them by commas:
 
     ```python
     welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")

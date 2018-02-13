@@ -1,4 +1,8 @@
 ## What next?
 
-Try making your own GUI program. Perhaps you could take an old program you wrote and give it a GUI? 
+Have a look at the [guizero documentation](https://lawsie.github.io/guizero/) and experiment with some of the other widgets.
+
+Try making your own GUI program.
+
+- Choose an old program you've written that makes use of input and output, and create a GUI for it.
 

@@ -1,8 +1,8 @@
 ## CheckBox widget
 
-The **CheckBox** widget allows you to select or unselect a true or false option.
+The `CheckBox` widget allows you to select or deselect an option.
 
-- Add the `CheckBox` widget to your import statement.
+- Add `CheckBox` to your `import` statement.
 
 - Add a `CheckBox` widget to the GUI:
 
@@ -10,10 +10,8 @@ The **CheckBox** widget allows you to select or unselect a true or false option.
     vip_seat = CheckBox(app, text="VIP seat?", grid=[1,1], align="left")
     ```
 
-    We also chose to add a `Text` widget in grid `[0,1]` to explain what the checkbox is for.
+- You can also add a `Text` widget in grid `[0,1]` to explain what the checkbox is for.
 
-- Press F5 to run your code. You should see the checkbox appear and be able to tick and untick it.
+- Press <kbd>F5</kbd> to run your code. You should see the `CheckBox`, you should be able to tick and untick it, and if you've added a `Text` widget as a label, this should be visible next to the check box.
 
     ![CheckBox demo](images/checkbox-demo.png)
-
-

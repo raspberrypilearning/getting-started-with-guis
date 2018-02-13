@@ -2,11 +2,11 @@
 
 You can add pictures to your GUI, as long as they are in GIF format. Sadly, animated GIFs will only display as stills.
 
-- Find a picture in GIF format that you would like to use, or save an existing picture as a GIF file. Save the picture in the same folder as your `gui_test.py` Python file.
+- Find a picture in GIF format that you would like to use, or save an existing picture as a GIF file. Make sure that the picture is in the same folder as your `gui_test.py` Python file.
 
-- Add the `Picture` widget to your `import` statement.
+- Add `Picture` to your `import` statement.
 
-- Add a `Picture` to the GUI:
+- Add a `Picture` widget to the GUI:
 
     ```python
     my_cat = Picture(app, image="cat.gif")

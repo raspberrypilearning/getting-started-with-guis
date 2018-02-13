@@ -2,7 +2,7 @@
 
 ### Hardware
 
-* Computer (PC/Mac/Raspberry Pi)
+* Computer (PC/Mac/Linux/Raspberry Pi)
 
 ### Software
 
