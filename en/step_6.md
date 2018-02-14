@@ -22,7 +22,7 @@ Probably the simplest widget you can add is the `Text` widget, which displays so
 title: Something has gone wrong!
 ---
 
-Your code should look like this, with `Text` imported at the start and `welcome_message` created before `app.display()`:
+Your code should look like this, with `Text` imported at the start and the `Text` widget called `welcome_message` created above `app.display()`:
 
 ```python
 from guizero import App, Text
