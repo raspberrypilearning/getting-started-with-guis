@@ -33,13 +33,15 @@ To keep your script nice and tidy, it is a good idea to put all the code which d
 
 --- hint ---
 
-- Define a function `say_my_name` near the top of your program after the `import` statement.
+- Define a function `say_my_name` near the top of your program below the `import` statement.
 
-- Tell the `command` argument of the `PushButton` to call that function.
+- Tell the `command` argument of the `PushButton` to call this function.
 
 --- /hint ---
 
 --- hint ---
+
+This is what your code should look like:
 
 ```python
 from guizero import App, Text, TextBox, PushButton
