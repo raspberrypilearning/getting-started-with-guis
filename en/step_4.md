@@ -4,7 +4,7 @@
 
 - Click on **File** > **New File**, and save your file as `gui_test.py`.
 
-- Add a line of code at the top of your file to import the `App` class from the `guizero` library:
+- Add a line of code at the top of your file to import the `App` class from the `guizero` module:
 
     ```python
     from guizero import App

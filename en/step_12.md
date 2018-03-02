@@ -2,7 +2,7 @@
 
 - Create a new file and save it as `gui_test2.py`.
 
-- Add a line of code at the start of your file to import the `App` class from the `guizero` library:
+- Add a line of code at the start of your file to import the `App` class from the `guizero` module:
 
     ```python
     from guizero import App
