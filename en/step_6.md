@@ -38,9 +38,9 @@ app.display()
 
 Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a **keyword argument**, because we have specified the keyword `text` and the value we want. We can specify other keyword arguments too by just adding them after the `text` one and separating them by commas:
 
-    ```python
-    welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")
-    ```
+```python
+welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")
+```
 
 Here, we have used keyword arguments for the `size`, `font`, and `color` (note the American spelling!).
 
