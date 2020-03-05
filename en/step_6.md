@@ -44,6 +44,6 @@ welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New R
 
 Here, we have used keyword arguments for the `size`, `font`, and `color` (note the American spelling!).
 
-![Text widget](images/app-welcome.png)
+![Text widget](images/welcome-font.png)
 
 You can specify any font your computer has installed. Colours can be specified as colour names, but not every possible colour has a name, so you can also use Hex codes (e.g. `#ff0000`) to define colours.
