@@ -16,11 +16,13 @@ hardware: ''
 software: python
 version: 4
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
 - title: What is a GUI?
 - title: Getting started
+  completion:
+  - engaged
 - title: Adding widgets
 - title: Text widget
 - title: TextBox widget
@@ -33,4 +35,6 @@ steps:
 - title: CheckBox widget
 - title: ButtonGroup widget
 - title: Finishing the program
+  completion:
+  - internal
 - title: What next?
