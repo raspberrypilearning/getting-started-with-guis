@@ -19,9 +19,10 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
-  completion: engaged
 - title: What is a GUI?
 - title: Getting started
+  completion:
+  - engaged
 - title: Adding widgets
 - title: Text widget
 - title: TextBox widget
@@ -33,6 +34,7 @@ steps:
 - title: Combo widget
 - title: CheckBox widget
 - title: ButtonGroup widget
-  completion: internal
 - title: Finishing the program
+  completion:
+  - internal
 - title: What next?
