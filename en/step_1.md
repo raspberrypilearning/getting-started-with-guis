@@ -1,17 +1,13 @@
 ## What you will make
 
-Learn how to create GUIs (graphical user interfaces) in Python using the **guizero** library.
+Learn how to create **Graphical User Interfaces (GUIs)** in Python using the **guizero** library.
 
-![Display a picture](images/picture-gui.png)
-
-![Booking button](images/booking-button.png)
+![An example of a GUI which has a text box, a button saying 'Display my name', an image of a cat and a slider.](images/picture-gui.png)
 
 --- collapse ---
 ---
 title: What is a GUI?
 ---
-
-## What is a GUI?
 
 **GUI** stands for 'graphical user interface', and it is pronounced like 'gooey'. 
 

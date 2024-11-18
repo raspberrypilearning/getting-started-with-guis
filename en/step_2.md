@@ -1,5 +1,29 @@
 ## Getting started
 
+--- task ---
+Make sure you have Python 3 installed. Install the `guizero` library by typing a command into the terminal:
+
+### Windows / Mac OS
+--- code ---
+---
+language: bash
+line_numbers: false
+---
+pip3 install guizero
+--- /code ---
+
+### Raspberry Pi
+--- code ---
+---
+language: bash
+line_numbers: false
+---
+sudo apt-get install python3-guizero
+--- /code ---
+
+
+--- /task ---
+
 - Open up Python 3 (IDLE).
 
 - Click on **File** > **New File**, and save your file as `gui_test.py`.
