@@ -1,19 +1,17 @@
-## A new app
+## CheckBox widget
 
-- Create a new file and save it as `gui_test2.py`.
+The `CheckBox` widget allows you to select or deselect an option.
 
-- Add a line of code at the start of your file to import the `App` class from the `guizero` module:
+- Add `CheckBox` to your `import` statement.
 
-    ```python
-    from guizero import App
-    ```
-
-- Now add two more lines of code to create an `App` object and display it on the screen:
+- Add a `CheckBox` widget to the GUI:
 
     ```python
-    app = App(title="My second GUI app", width=300, height=200, layout="grid")
-    app.display()
+    vip_seat = CheckBox(app, text="VIP seat?", grid=[1,1], align="left")
     ```
 
-    Note that we have used some new keyword arguments: `width` and `height` set the size of the app window, and `layout` allows us to set out our widgets on an invisible grid.
+- You can also add a `Text` widget in grid `[0,1]` to explain what the checkbox is for.
 
+- Press <kbd>F5</kbd> to run your code. You should see the `CheckBox`, you should be able to tick and untick it, and if you've added a `Text` widget as a label, this should be visible next to the check box.
+
+    ![CheckBox demo](images/checkbox-demo.png)

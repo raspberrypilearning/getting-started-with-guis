@@ -1,28 +1,26 @@
-## Combo widget
+## ButtonGroup widget
 
-The `Combo` widget allows you to select an option from a drop-down menu.
+The `ButtonGroup` widget allows you to create a group of radio buttons on your GUI so that users can choose one of a set of options.
 
-- Add `Combo` to your `import` statement.
+- Add `ButtonGroup` to your `import` statement.
 
-- Add a `Combo` widget to the GUI:
-
-    ```python
-    film_choice = Combo(app, options=["Star Wars", "Frozen", "Lion King"], grid=[1,0], align="left")
-    ```
-
-    - As usual, we have specified the `app` parameter to tell the `Combo` widget that the app is its master.
-    - The `options` argument is a list of options we wish to display in the widget.
-    - Because we specified `layout=grid` in the `app` object, we have to now include a `grid` argument with each widget to tell it where to appear. The `grid` argument should be a list containing `[x,y]` values for where you would like the widget to appear on the grid. `[0,0`] on the grid is the top left-hand corner. We can also `align` the widget within the grid square, in this case on the `"left"`.
-
-- Save your code and press <kbd>F5</kbd> to run it. Note that the `Combo` widget appears in the very top left of the screen, even though we specified its grid position as `[1,0]`. This is because grid square `[0,0]` is empty, and empty grid squares have no height or width.
-
-- Add the `Text` widget to your `import` statement, then add a `Text` object in grid square `[0,0]` to provide some description of what the person will be selecting using the `Combo` widget:
+- Add a `ButtonGroup` widget to the GUI:
 
     ```python
-    film_description = Text(app, text="Which film?", grid=[0,0], align="left")
+    row_choice = ButtonGroup(app, options=[ ["Front", "F"], ["Middle", "M"],["Back", "B"] ],
+    selected="M", horizontal=True, grid=[1,2], align="left")
     ```
 
-    Run the program to check that the `Text` and the `Combo` are both displayed properly.
+    Let's look at this code more closely:
+    - As before, `app` tells the `ButtonGroup` that the app is the boss.
+    - `options` is a list of options which will appear as buttons. Note that each option is itself a list containing the button label and a hidden value associated with that option. (You will find out later what the hidden value is useful for.)
+    - `selected` tells the `ButtonGroup` which button is selected to begin with.
+    - `horizontal=True` tells the `ButtonGroup` to display in a horizontal line.
+    - As with other widgets, `grid` specifies where the `ButtonGroup` will be placed on the grid, and `align="left"` positions the `ButtonGroup` on the left of the grid square.
 
-    ![Combo with text](images/combo-with-text.png)
+- You can also add another `Text` widget in `[0,2]` to explain what the `ButtonGroup` is for.
+
+- Press <kbd>F5</kbd> to run your code. You should see three buttons: the 'Middle' option should be selected when the program begins, and you should be able to switch between the options.
+
+    ![Button Group demo](images/button-group.png)
 

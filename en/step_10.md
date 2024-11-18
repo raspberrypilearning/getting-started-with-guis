@@ -1,19 +1,19 @@
-## Picture widget
+## A new app
 
-You can add pictures to your GUI, as long as they are in GIF format. Sadly, animated GIFs will only display as stills.
+- Create a new file and save it as `gui_test2.py`.
 
-- Find a picture in GIF format that you would like to use, or save an existing picture as a GIF file. Make sure that the picture is in the same folder as your `gui_test.py` Python file.
-
-- Add `Picture` to your `import` statement.
-
-- Add a `Picture` widget to the GUI:
+- Add a line of code at the start of your file to import the `App` class from the `guizero` module:
 
     ```python
-    my_cat = Picture(app, image="cat.gif")
+    from guizero import App
     ```
 
-- Press <kbd>F5</kbd> to run your code. You should see your picture appear on the GUI.
+- Now add two more lines of code to create an `App` object and display it on the screen:
 
-    ![Display a picture](images/picture-gui.png)
+    ```python
+    app = App(title="My second GUI app", width=300, height=200, layout="grid")
+    app.display()
+    ```
 
+    Note that we have used some new keyword arguments: `width` and `height` set the size of the app window, and `layout` allows us to set out our widgets on an invisible grid.
 

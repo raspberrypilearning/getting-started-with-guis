@@ -1,16 +1,24 @@
-## What you will need
+## Getting started
 
-### Hardware
+- Open up Python 3 (IDLE).
 
-* Computer (PC/Mac/Linux/Raspberry Pi)
+- Click on **File** > **New File**, and save your file as `gui_test.py`.
 
-### Software
+- Add a line of code at the top of your file to import the `App` class from the `guizero` module:
 
-* Python 3
-* [`guizero`](https://lawsie.github.io/guizero/) Python module
+    ```python
+    from guizero import App
+    ```
 
-[[[generic-python-install-python3]]]
+- Now add two more lines of code to create an `App` and then display it on the screen:
 
-You can use `pip` to install the `guizero` module: 
+    ```python
+    app = App(title="Hello world")
+    app.display()
+    ```
 
-[[[generic-python-installing-with-pip]]]
+- Save your file and press <kbd>F5</kbd> to run it. You should see a GUI window that looks like this:
+
+    ![First App](images/first-app.png)
+
+Congratulations, you have just built your first GUI app!

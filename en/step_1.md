@@ -1,16 +1,22 @@
 ## What you will make
-In this resource you will create two simple GUIs (graphical user interfaces) in Python.
+
+Learn how to create GUIs (graphical user interfaces) in Python using the **guizero** library.
 
 ![Display a picture](images/picture-gui.png)
 
 ![Booking button](images/booking-button.png)
 
-## What you will learn
-By creating a GUI in Python, you will learn about:
+--- collapse ---
+---
+title: What is a GUI?
+---
 
-- Using functions
-- Event-driven programming, and how it differs from procedural programming
+## What is a GUI?
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+**GUI** stands for 'graphical user interface', and it is pronounced like 'gooey'. 
 
-+ [Can effectively combine functionality from multiple libraries or APIs and refer to documentation](https://curriculum.raspberrypi.org/programming/developer/){:target="_blank"}
+If you have written Python programs before, these will probably have dealt with input as text typed in by the user, and with output appearing on the screen. 
+
+Adding a GUI to your program lets the user interact with it using buttons, menus, text boxes, and other familiar user interface features.
+
+--- /collapse ---
