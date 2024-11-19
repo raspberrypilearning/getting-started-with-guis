@@ -16,7 +16,7 @@ line_numbers: true
 from guizero import App, Text
 --- /code ---
 
-Each type of widget only needs to be added to the list once, and then you can use it as many times as you want on your GUI.
+Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
 
 --- /task ---
 
