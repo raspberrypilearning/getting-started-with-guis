@@ -1,7 +1,7 @@
 ## Getting started
 
 --- task ---
-Make sure you have [Python 3](https://www.python.org/downloads/){:target=blank} installed. Install the `guizero` library by typing a command into the terminal:
+Make sure you have [Python 3](https://www.python.org/downloads/){:target="_blank"}installed. Install the `guizero` library by typing a command into the terminal:
 
 #### Windows / Mac OS
 --- code ---
@@ -28,7 +28,7 @@ Open a new file in your favourite Python IDE, and save it as `gui_test.py`.
 --- /task ---
 
 --- task ---
-Add a line of code at the top of your file to import the `App` class from the `guizero` module:
+Add this code to your file. This will allow you to check that everything is set up correctly.
 
 --- code ---
 ---
@@ -44,8 +44,10 @@ app.display()
 
 --- task ---
 
-Save and then run your file. You should see a GUI window that looks like this:
+Save and then run the file. You should see a GUI window that looks like this:
 
 ![A GUI with a title bar containing the text 'Hello world'. The rest of the window is blank.](images/first-app.png)
+
+Your window will look different depending on whether you are using Windows, Mac OS or Linux.
 
 --- /task ---
