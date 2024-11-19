@@ -16,12 +16,12 @@ line_numbers: true
 from guizero import App, Text
 --- /code ---
 
-Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
-
 --- /task ---
 
+Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
+
 --- task ---
-All code to add widgets should go between the line of code which creates the `App`, and the line of code which displays it. 
+Add all widget code between the line of code which creates the `App`, and the line of code which displays it. 
 
 --- code ---
 ---
