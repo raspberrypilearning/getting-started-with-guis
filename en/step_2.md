@@ -32,7 +32,7 @@ Add this code to your file. This will allow you to check that everything is set 
 
 --- code ---
 ---
-language: bash
+language: python
 line_numbers: false
 ---
 from guizero import App
