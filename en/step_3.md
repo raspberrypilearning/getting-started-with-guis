@@ -10,7 +10,7 @@ Add the widget to the list at the start of your program. This program imports tw
 
 --- code ---
 ---
-language: bash
+language: python
 line_numbers: true
 ---
 from guizero import App, Text
