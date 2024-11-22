@@ -77,7 +77,7 @@ app.display()
 
 --- task ---
 
-Run your code. You should see a joke, and when you press the button, the punch line is displayed. 
+Save and run your code. You should see a joke, and when you press the button, the punch line is displayed. 
 
 ![GUI with text 'Why did the starfish blush?' and button labelled answer](images/display-joke.png)
 
