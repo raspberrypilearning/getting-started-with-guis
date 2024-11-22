@@ -2,6 +2,7 @@
 
 A PushButton widget creates a button you can press. When the button is pressed, a function is called.
 
+This example will display a joke, with a button to press to display the punch line.
 
 --- task ---
 
@@ -18,10 +19,10 @@ from guizero import App, Text, PushButton
 
 --- /task ---
 
---- task ---
-This GUI will display a joke, with a button to press to display the punch line.
 
-**Above** the code which creates the GUI app, write a function called `punch_line`:
+--- task ---
+
+Write a function called `punch_line`:
 
 --- code ---
 ---
@@ -37,7 +38,7 @@ def punch_line():
 
 
 --- task ---
-Create the `App` and add a `Text` widget containing the start of the joke.
+Underneath the function, create the `App` and add a `Text` widget containing the start of the joke.
 
 --- code ---
 ---
@@ -54,16 +55,21 @@ app.display()
 
 --- task ---
 
-Create a `PushButton` widget. When the button is pressed, the function `punch_line` will be called.
+Create a `PushButton` widget. When the button is pressed, the `punch_line` function will be called.
 
 --- code ---
 ---
 language: python
 line_numbers: true
 line_number_start: 10
+line_highlights: 10-14
 ---
-update_text = PushButton(app, command=punch_line, text="Answer")
-
+update_text = PushButton(
+    app, 
+    command=punch_line, 
+    text="Answer"
+)
+app.display()
 --- /code ---
 
 --- /task ---
