@@ -1,27 +1,48 @@
-## Review 
+## Combo 
 
-You have now learnt how to use simple GUI widgets. This is the full code for this first part:
+The combo widget allows you to select an option from a drop-down menu.
 
-```python
-from guizero import App, Text, TextBox, PushButton, Slider, Picture
 
-def say_my_name():
-    welcome_message.value = my_name.value
+--- task ---
 
-def change_text_size(slider_value):
-    welcome_message.size = slider_value
+Add `Combo` to the list of widgets at the start of your program.
 
-app = App(title="Hello world")
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, Combo
+--- /code ---
 
-welcome_message = Text(app, text="Welcome to my app", size=40, font="Times new roman", color="lightblue")
-my_name = TextBox(app, width=30)
-update_text = PushButton(app, command=say_my_name, text="Display my name")
-text_size = Slider(app, command=change_text_size, start=10, end=80)
-my_cat = Picture(app, image="cat.gif")
+--- /task ---
 
+
+--- task ---
+Create the `App` and add a `Combo` widget.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Movie chooser")
+film_choice = Combo(app, options=["Star Wars", "Frozen", "Lion King"])
 app.display()
-```
+--- /code ---
 
-You can also download a complete working example [here](resources/gui_test.py).
+--- /task ---
 
-Next we'll make a simple GUI for booking cinema tickets to look at some a little more complicated GUI widgets: combo menus, check boxes, and radio buttons.
+--- task ---
+
+Save and run your code. You should see a drop down box with three options. 
+
+![A GUI window with a drop down box containing the options Star Wars, Frozen and Lion King](images/combo-with-text.png)
+
+--- /task ---
+
+
+
+

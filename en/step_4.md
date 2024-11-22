@@ -1,4 +1,4 @@
-## Text widget
+## Text 
 
 The text widget displays some text on the screen.
 

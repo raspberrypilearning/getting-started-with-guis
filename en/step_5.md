@@ -1,4 +1,4 @@
-## TextBox widget
+## TextBox 
 
 A TextBox widget allows the user to type in data.
 
@@ -26,8 +26,9 @@ Create a `TextBox` widget
 language: python
 line_numbers: false
 ---
+app = App(title="Text box")
 my_name = TextBox(app)
-
+app.display()
 --- /code ---
 
 --- /task ---

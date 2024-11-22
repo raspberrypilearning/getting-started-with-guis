@@ -1,4 +1,4 @@
-## PushButton widget
+## PushButton 
 
 A PushButton widget creates a button you can press. When the button is pressed, a function is called.
 

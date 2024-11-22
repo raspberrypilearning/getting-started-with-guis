@@ -1,17 +1,20 @@
-## CheckBox widget
+## Challenge
 
-The `CheckBox` widget allows you to select or deselect an option.
+--- challenge ---
 
-- Add `CheckBox` to your `import` statement.
+--- task ---
+Make your own GUI using some of the widgets you have learned about. 
+--- /task ---
 
-- Add a `CheckBox` widget to the GUI:
+--- task ---
+Look at the `guizero` [documentation](https://lawsie.github.io/guizero/widgetoverview/){:target="_blank"} to find out how to customise your widgets. 
+--- /task ---
 
-    ```python
-    vip_seat = CheckBox(app, text="VIP seat?", grid=[1,1], align="left")
-    ```
+--- task ---
+Use a different widget you have found int the `guizero` [documentation](https://lawsie.github.io/guizero/widgetoverview/){:target="_blank"}. 
+--- /task ---
 
-- You can also add a `Text` widget in grid `[0,1]` to explain what the checkbox is for.
 
-- Press <kbd>F5</kbd> to run your code. You should see the `CheckBox`, you should be able to tick and untick it, and if you've added a `Text` widget as a label, this should be visible next to the check box.
 
-    ![CheckBox demo](images/checkbox-demo.png)
+
+--- /challenge ---

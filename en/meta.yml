@@ -27,8 +27,6 @@ steps:
 - title: PushButton 
 - title: Slider 
 - title: Picture 
-- title: Review
-- title: A new app
 - title: Combo 
 - title: CheckBox 
   completion:

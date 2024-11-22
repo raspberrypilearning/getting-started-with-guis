@@ -1,28 +1,52 @@
-## Combo widget
+## ButtonGroup 
 
-The `Combo` widget allows you to select an option from a drop-down menu.
+The ButtonGroup widget allows you to create a group of radio buttons to choose one of a set of options.
 
-- Add `Combo` to your `import` statement.
 
-- Add a `Combo` widget to the GUI:
+--- task ---
 
-    ```python
-    film_choice = Combo(app, options=["Star Wars", "Frozen", "Lion King"], grid=[1,0], align="left")
-    ```
+Add `ButtonGroup` to the list of widgets at the start of your program.
 
-    - As usual, we have specified the `app` parameter to tell the `Combo` widget that the app is its master.
-    - The `options` argument is a list of options we wish to display in the widget.
-    - Because we specified `layout=grid` in the `app` object, we have to now include a `grid` argument with each widget to tell it where to appear. The `grid` argument should be a list containing `[x,y]` values for where you would like the widget to appear on the grid. `[0,0`] on the grid is the top left-hand corner. We can also `align` the widget within the grid square, in this case on the `"left"`.
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, ButtonGroup
+--- /code ---
 
-- Save your code and press <kbd>F5</kbd> to run it. Note that the `Combo` widget appears in the very top left of the screen, even though we specified its grid position as `[1,0]`. This is because grid square `[0,0]` is empty, and empty grid squares have no height or width.
+--- /task ---
 
-- Add the `Text` widget to your `import` statement, then add a `Text` object in grid square `[0,0]` to provide some description of what the person will be selecting using the `Combo` widget:
+--- task ---
+Create the `App` and add a `ButtonGroup` widget.
 
-    ```python
-    film_description = Text(app, text="Which film?", grid=[0,0], align="left")
-    ```
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Seat type")
+row_choice = ButtonGroup(
+    app, 
+    options=[ ["Front", "F"], ["Middle", "M"],["Back", "B"] ],
+    selected="M", 
+    horizontal=True, 
+)
+app.display()
+--- /code ---
 
-    Run the program to check that the `Text` and the `Combo` are both displayed properly.
+--- /task ---
 
-    ![Combo with text](images/combo-with-text.png)
+
+--- task ---
+
+Save and run your code. You should see three buttons: the 'Middle' option should be selected when the program begins, and you should be able to switch between the options.
+
+![Button Group demo](images/button-group.png)
+
+--- /task ---
+
+
 

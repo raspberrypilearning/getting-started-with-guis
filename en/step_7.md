@@ -1,4 +1,4 @@
-## Slider widget
+## Slider 
 
 A slider lets users pick a value from a range of values easily. It works rather like moving a volume control slider.
 
