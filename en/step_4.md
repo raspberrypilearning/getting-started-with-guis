@@ -1,6 +1,6 @@
 ## Text widget
 
-The `Text` widget displays some text on the screen.
+The text widget displays some text on the screen.
 
 --- task ---
 
@@ -38,7 +38,7 @@ app.display()
 
 --- task ---
 
-- Run your code. You should see the text displayed on your GUI:
+Run your code. You should see the text displayed on your GUI:
 
 ![Text widget](images/app-welcome.png)
 
@@ -57,7 +57,13 @@ line_highlights: 3
 ---
 from guizero import App, Text
 app = App(title="Hello world")
-welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")
+welcome_message = Text(
+        app, 
+        text="Welcome to my app", 
+        size=40, 
+        font="Times New Roman", 
+        color="lightblue"
+)
 app.display()
 --- /code ---
 

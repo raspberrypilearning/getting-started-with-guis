@@ -1,7 +1,7 @@
 ## Getting started
 
 --- task ---
-Make sure you have [Python 3](https://www.python.org/downloads/){:target="_blank"}installed. Install the `guizero` library by typing a command into the terminal:
+Make sure you have [Python 3](https://www.python.org/downloads/){:target="_blank"} installed. Install the `guizero` library by typing a command into the terminal:
 
 #### Windows / Mac OS
 --- code ---
@@ -18,7 +18,7 @@ pip3 install guizero
 language: bash
 line_numbers: false
 ---
-sudo apt-get install python3-guizero
+sudo apt install python3-guizero
 --- /code ---
 
 --- /task ---

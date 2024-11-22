@@ -6,7 +6,9 @@ Each time you add add a widget, follow these two rules:
 
 --- task ---
 
-Add the widget to the list at the start of your program. This program imports two widgets: `App` and `Text`.
+Add the widget to the list at the start of your program. Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
+
+This program imports two widgets: `App` and `Text`.
 
 --- code ---
 ---
@@ -18,7 +20,6 @@ from guizero import App, Text
 
 --- /task ---
 
-Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
 
 --- task ---
 Add all widget code between the line of code which creates the `App`, and the line of code which displays it. 
