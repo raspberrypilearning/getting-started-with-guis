@@ -31,7 +31,7 @@ line_numbers: true
 line_number_start: 8
 ---
 app = App(title="Picture")
-my_cat = Picture(app, image="cat.gif")
+my_cat = Picture(app, image="thinking_lady.png")
 app.display()
 --- /code ---
 
