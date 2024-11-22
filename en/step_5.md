@@ -4,7 +4,7 @@ A TextBox widget allows the user to type in data.
 
 --- task ---
 
-Add `TextBox` to the list of widgets at the start of your program.
+Start a new file. Add `TextBox` to the list of widgets at the start of your program.
 
 --- code ---
 ---

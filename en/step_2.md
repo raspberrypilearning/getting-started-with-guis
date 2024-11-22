@@ -24,7 +24,7 @@ sudo apt install python3-guizero
 --- /task ---
 
 --- task ---
-Open a new file in your favourite Python IDE, and save it as `gui_test.py`.
+Open a new file in your favourite Python IDE.
 --- /task ---
 
 --- task ---

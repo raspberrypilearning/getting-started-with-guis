@@ -5,7 +5,7 @@ The ButtonGroup widget allows you to create a group of radio buttons to choose o
 
 --- task ---
 
-Add `ButtonGroup` to the list of widgets at the start of your program.
+Start a new file. Add `ButtonGroup` to the list of widgets at the start of your program.
 
 --- code ---
 ---
@@ -44,7 +44,7 @@ app.display()
 
 Save and run your code. You should see three buttons: the 'Middle' option should be selected when the program begins, and you should be able to switch between the options.
 
-![Button Group demo](images/button-group.png)
+![Button Group demo](images/buttongroup.png)
 
 --- /task ---
 

@@ -8,7 +8,7 @@ Find a picture, and save it in the same folder as your Python file.
 
 --- task ---
 
-Add `Picture` to the list of widgets at the start of your program.
+Start a new file. Add `Picture` to the list of widgets at the start of your program.
 
 --- code ---
 ---

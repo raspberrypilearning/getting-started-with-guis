@@ -7,7 +7,7 @@ This example will let you change the font size using a slider.
 
 --- task ---
 
-Add `Slider` to the list of widgets at the start of your program.
+Start a new file. Add `Slider` to the list of widgets at the start of your program.
 
 --- code ---
 ---

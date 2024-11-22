@@ -4,7 +4,7 @@ You can add text, text boxes, buttons and other features to a GUI. These are cal
 
 Each time you add add a widget, follow these two rules:
 
---- task ---
+### Rule one
 
 Add the widget to the list at the start of your program. Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
 
@@ -18,10 +18,9 @@ line_numbers: true
 from guizero import App, Text
 --- /code ---
 
---- /task ---
 
+### Rule two 
 
---- task ---
 Add all widget code between the line of code which creates the `App`, and the line of code which displays it. 
 
 --- code ---
@@ -39,6 +38,5 @@ app = App(title="Hello world")
 app.display()
 --- /code ---
 
---- /task ---
 
 

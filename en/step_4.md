@@ -3,8 +3,7 @@
 The text widget displays some text on the screen.
 
 --- task ---
-
-Add `Text` to the list of widgets at the start of your program.
+Start a new file. Add `Text` to the list of widgets at the start of your program.
 
 --- code ---
 ---

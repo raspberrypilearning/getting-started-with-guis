@@ -5,7 +5,7 @@ The combo widget allows you to select an option from a drop-down menu.
 
 --- task ---
 
-Add `Combo` to the list of widgets at the start of your program.
+Start a new file. Add `Combo` to the list of widgets at the start of your program.
 
 --- code ---
 ---
@@ -39,7 +39,7 @@ app.display()
 
 Save and run your code. You should see a drop down box with three options. 
 
-![A GUI window with a drop down box containing the options Star Wars, Frozen and Lion King](images/combo-with-text.png)
+![A GUI window with a drop down box containing the options Star Wars, Frozen and Lion King](images/combo.png)
 
 --- /task ---
 

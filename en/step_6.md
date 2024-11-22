@@ -6,7 +6,7 @@ This example will display a joke, with a button to press to display the punch li
 
 --- task ---
 
-Add `PushButton` to the list of widgets at the start of your program.
+Start a new file. Add `PushButton` to the list of widgets at the start of your program.
 
 --- code ---
 ---

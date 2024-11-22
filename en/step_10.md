@@ -4,7 +4,7 @@ The CheckBox widget allows you to select or deselect an option.
 
 --- task ---
 
-Add `CheckBox` to the list of widgets at the start of your program.
+Start a new file. Add `CheckBox` to the list of widgets at the start of your program.
 
 --- code ---
 ---
@@ -38,7 +38,7 @@ app.display()
 
 Save and run your code. You should see the `CheckBox`, you should be able to tick and untick it.
 
-![CheckBox demo](images/checkbox-demo.png)
+![CheckBox demo](images/checkbox.png)
 
 --- /task ---
 
