@@ -56,7 +56,7 @@ def update_text():
 
 Save and run your code. Type a message in the TextBox, then press the button. The message should be copied to the Text widget.
 
-![Button Group demo](images/buttongroup.png)
+![A GUI with a textbox, some text and a button labelled 'Display it'. The word 'Hello' is written in both the textbox and the text.](images/value-demo.png)
 
 --- /task ---
 
