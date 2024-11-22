@@ -32,6 +32,7 @@ steps:
   completion:
   - internal
 - title: ButtonGroup 
+- title: Get a value
   completion:
   - external
 - title: Challenge
