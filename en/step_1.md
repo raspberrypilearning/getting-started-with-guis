@@ -2,7 +2,7 @@
 
 Learn how to create **Graphical User Interfaces (GUIs)** in Python using the **guizero** library.
 
-![An example of a GUI which has a text box, a button saying 'Display my name', an image of a cat and a slider.](images/picture-gui.png)
+![GUI with text 'Why did the starfish blush?' and button labelled answer](images/display-joke.png)
 
 --- collapse ---
 ---
