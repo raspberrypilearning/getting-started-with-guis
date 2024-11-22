@@ -61,7 +61,7 @@ Create a `Slider` widget. When the slider is moved, the `change_text_size` funct
 language: python
 line_numbers: true
 line_number_start: 10
-line_highlights: 10-14
+line_highlights: 10-15
 ---
 text_size = Slider(
     app, 
@@ -76,7 +76,7 @@ app.display()
 
 --- task ---
 
-Save and run your code. You should see a joke, and when you press the button, the punch line is displayed. 
+Save and run your code. You should see some example text. When the slider is moved, the text gets larger or smaller. 
 
 ![GUI with text 'Some example text' and a slider from 10 to 80](images/slider-display.png)
 
