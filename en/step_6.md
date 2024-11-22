@@ -50,6 +50,7 @@ message = Text(app, text="Why did the starfish blush?")
 app.display()
 --- /code ---
 
+--- /task ---
 
 --- task ---
 
