@@ -53,7 +53,7 @@ You can change the size, font and colour of your text like this:
 language: python
 line_numbers: true
 line_number_start: 1
-line_highlights: 3
+line_highlights: 6-8
 ---
 from guizero import App, Text
 app = App(title="Hello world")

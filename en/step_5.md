@@ -1,16 +1,49 @@
 ## TextBox widget
 
-A `TextBox` widgets allows the user to type in data, a bit like the GUI version of Python's `input()` function, which you may have used before. Here's how to add a `TextBox`:
+A TextBox widget allows the user to type in data.
 
-- Add `TextBox` to your `import` statement.
+--- task ---
 
-- Add a `TextBox` widget to the GUI:
+Add `TextBox` to the list of widgets at the start of your program.
 
-    ```python
-    my_name = TextBox(app)
-    ```
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, TextBox
+--- /code ---
 
-- Run your code by pressing <kbd>F5</kbd>. You should see a small text box appear. The widget has an optional keyword argument `width`, which you can add if you wish to make the text box wider.
+--- /task ---
 
-    ![TextBox widget](images/text-box.png)
+--- task ---
+
+Create a `TextBox` widget
+
+--- code ---
+---
+language: python
+line_numbers: false
+---
+my_name = TextBox(app)
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+You should see a small text box appear. 
+
+![TextBox widget](images/text-box.png)
+
+--- /task ---
+
+
+
+
+
+
+
 
