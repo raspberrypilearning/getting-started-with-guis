@@ -22,17 +22,20 @@ steps:
   completion:
   - engaged
 - title: Adding widgets
-- title: Text widget
-- title: TextBox widget
-- title: PushButton widget
-- title: Slider widget
-- title: Picture widget
+- title: Text 
+- title: TextBox 
+- title: PushButton 
+- title: Slider 
+- title: Picture 
 - title: Review
 - title: A new app
-- title: Combo widget
-- title: CheckBox widget
-- title: ButtonGroup widget
-- title: Finishing the program
+- title: Combo 
+- title: CheckBox 
   completion:
   - internal
-- title: What next?
+- title: ButtonGroup 
+  completion:
+  - external
+- title: Challenge
+  challenge: true
+- title: What can you do now?

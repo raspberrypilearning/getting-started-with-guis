@@ -34,7 +34,7 @@ my_name = TextBox(app)
 
 --- task ---
 
-You should see a small text box appear. 
+Run your code. You should see a small text box appear. 
 
 ![TextBox widget](images/text-box.png)
 

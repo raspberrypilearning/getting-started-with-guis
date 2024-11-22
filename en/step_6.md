@@ -1,67 +1,78 @@
 ## PushButton widget
 
-You can use a `PushButton` widget to create a button, and write code so that when the button is pushed, a function is called.
+A PushButton widget creates a button you can press. When the button is pressed, a function is called.
 
-To keep your script nice and tidy, it is a good idea to put all the code which defines functions at the top of your program, immediately below the `import` line.
 
-- **Above** the code which creates the GUI app, write a function called `say_my_name`:
+--- task ---
 
-    ```python
-    def say_my_name():
-        welcome_message.value = my_name.value
-    ```
-    
-    So this `say_my_name` function refers to the `Text` widget that you've written earlier `welcome_message`. It will set the `value` of `welcome_message` to what was typed into your `TextBox` widget (`my_name`).
-    
-    You can use the **`value` property** with many widgets to retrieve their current value or to set it to something new.
+Add `PushButton` to the list of widgets at the start of your program.
 
-- Add `PushButton` to your `import` statement.
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, Text, PushButton
+--- /code ---
 
-- Add a `PushButton` widget to the GUI:
+--- /task ---
 
-    ```python
-    update_text = PushButton(app, command=say_my_name, text="Display my name")
-    ```
+--- task ---
+This GUI will display a joke, with a button to press to display the punch line.
 
-    The first argument tells the `PushButton` that the `app` is its boss. Then we use two keyword arguments: `command` tells the button which function to call when it is pressed, and `text` is the text which will be displayed on the button.
+**Above** the code which creates the GUI app, write a function called `punch_line`:
 
-- Press <kbd>F5</kbd> to run your code. Type your name into the text box and then press the button. You should see your name displayed in large text at the top.
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 4
+---
+def punch_line():
+    message.value = "Because the sea weed"
+--- /code ---
 
-    ![Display my name](images/display-my-name.png)
+--- /task ---
 
---- hints ---
 
---- hint ---
+--- task ---
+Create the `App` and add a `Text` widget containing the start of the joke.
 
-- Define a function `say_my_name` near the top of your program below the `import` statement.
-
-- Tell the `command` argument of the `PushButton` to call this function.
-
---- /hint ---
-
---- hint ---
-
-This is what your code should look like:
-
-```python
-from guizero import App, Text, TextBox, PushButton
-
-def say_my_name():
-    welcome_message.value = my_name.value
-
-app = App(title="Hello world")
-
-welcome_message = Text(app, text="Welcome to my app", size=40, font="Times new roman", color="lightblue")
-my_name = TextBox(app, width=30)
-update_text = PushButton(app, command=say_my_name, text="Display my name")
-
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Joke")
+message = Text(app, text="Why did the starfish blush?")
 app.display()
-```
-
---- /hint ---
-
---- /hints ---
+--- /code ---
 
 
+--- task ---
 
-The `PushButton` widget is a good example of how the event loop works: the GUI waits for an event (in this case, you clicking the button), and it calls a function in response to the event. The function may contain code to change something on the GUI, and if it does, the display is updated accordingly.
+Create a `PushButton` widget. When the button is pressed, the function `punch_line` will be called.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 10
+---
+update_text = PushButton(app, command=punch_line, text="Answer")
+
+--- /code ---
+
+--- /task ---
+
+
+--- task ---
+
+Run your code. You should see a joke, and when you press the button, the punch line is displayed. 
+
+![GUI with text 'Why did the starfish blush?' and button labelled answer](images/display-joke.png)
+
+--- /task ---
+
