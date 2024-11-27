@@ -1,7 +1,42 @@
-## What is a GUI?
+## Adding widgets
 
-**GUI** stands for 'graphical user interface', and it is pronounced like 'gooey'. 
+You can add text, text boxes, buttons and other features to a GUI. These are called **widgets**. 
 
-If you have written Python programs before, these will probably have dealt with input as text typed in by the user, and with output appearing on the screen. 
+Each time you add add a widget, follow these two rules:
 
-Adding a GUI to your program lets the user interact with it using buttons, menus, text boxes, and other familiar user interface features.
+### Rule one
+
+Add the widget to the list at the start of your program. Each type of widget only needs to be added to the list once, and then you can use it as many times as you like on your GUI.
+
+This program imports two widgets: `App` and `Text`.
+
+--- code ---
+---
+language: python
+line_numbers: true
+---
+from guizero import App, Text
+--- /code ---
+
+
+### Rule two 
+
+Add all widget code between the line of code which creates the `App`, and the line of code which displays it. 
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+line_highlights: 4
+---
+from guizero import App
+app = App(title="Hello world")
+
+# All widget code should go here
+
+app.display()
+--- /code ---
+
+
+

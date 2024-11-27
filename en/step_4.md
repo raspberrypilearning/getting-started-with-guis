@@ -1,24 +1,71 @@
-## Getting started
+## Text 
 
-- Open up Python 3 (IDLE).
+The text widget displays some text on the screen.
 
-- Click on **File** > **New File**, and save your file as `gui_test.py`.
+--- task ---
+Start a new file. Add `Text` to the list of widgets at the start of your program.
 
-- Add a line of code at the top of your file to import the `App` class from the `guizero` module:
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, Text
+--- /code ---
 
-    ```python
-    from guizero import App
-    ```
+--- /task ---
 
-- Now add two more lines of code to create an `App` and then display it on the screen:
+--- task ---
 
-    ```python
-    app = App(title="Hello world")
-    app.display()
-    ```
+Create a `Text` widget
 
-- Save your file and press <kbd>F5</kbd> to run it. You should see a GUI window that looks like this:
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+line_highlights: 3
+---
+from guizero import App, Text
+app = App(title="Hello world")
+welcome_message = Text(app, text="Welcome to my app")
+app.display()
+--- /code ---
 
-    ![First App](images/first-app.png)
+--- /task ---
 
-Congratulations, you have just built your first GUI app!
+--- task ---
+
+Run your code. You should see the text displayed on your GUI:
+
+![Text widget](images/app-welcome.png)
+
+--- /task ---
+
+--- task ---
+
+You can change the size, font and colour of your text like this:
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+line_highlights: 6-8
+---
+from guizero import App, Text
+app = App(title="Hello world")
+welcome_message = Text(
+        app, 
+        text="Welcome to my app", 
+        size=40, 
+        font="Times New Roman", 
+        color="lightblue"
+)
+app.display()
+--- /code ---
+
+![Text widget](images/welcome-font.png)
+
+--- /task ---

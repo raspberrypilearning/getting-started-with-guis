@@ -1,19 +1,46 @@
-## Picture widget
+## CheckBox 
 
-You can add pictures to your GUI, as long as they are in GIF format. Sadly, animated GIFs will only display as stills.
+The CheckBox widget allows you to select or deselect an option.
 
-- Find a picture in GIF format that you would like to use, or save an existing picture as a GIF file. Make sure that the picture is in the same folder as your `gui_test.py` Python file.
+--- task ---
 
-- Add `Picture` to your `import` statement.
+Start a new file. Add `CheckBox` to the list of widgets at the start of your program.
 
-- Add a `Picture` widget to the GUI:
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, CheckBox
+--- /code ---
 
-    ```python
-    my_cat = Picture(app, image="cat.gif")
-    ```
-
-- Press <kbd>F5</kbd> to run your code. You should see your picture appear on the GUI.
-
-    ![Display a picture](images/picture-gui.png)
+--- /task ---
 
 
+--- task ---
+Create the `App` and add a `CheckBox` widget.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Seat type")
+vip_seat = CheckBox(app, text="VIP seat?")
+app.display()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Save and run your code. You should see the `CheckBox`, you should be able to tick and untick it.
+
+![CheckBox demo](images/checkbox.png)
+
+--- /task ---
+
+
+  

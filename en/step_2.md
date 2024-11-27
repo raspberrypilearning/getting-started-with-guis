@@ -1,16 +1,53 @@
-## What you will need
+## Getting started
 
-### Hardware
+--- task ---
+Make sure you have [Python 3](https://www.python.org/downloads/){:target="_blank"} installed. Install the `guizero` library by typing a command into the terminal:
 
-* Computer (PC/Mac/Linux/Raspberry Pi)
+#### Windows / Mac OS
+--- code ---
+---
+language: bash
+line_numbers: false
+---
+pip3 install guizero
+--- /code ---
 
-### Software
+#### Raspberry Pi
+--- code ---
+---
+language: bash
+line_numbers: false
+---
+sudo apt install python3-guizero
+--- /code ---
 
-* Python 3
-* [`guizero`](https://lawsie.github.io/guizero/) Python module
+--- /task ---
 
-[[[generic-python-install-python3]]]
+--- task ---
+Open a new file in your favourite Python IDE.
+--- /task ---
 
-You can use `pip` to install the `guizero` module: 
+--- task ---
+Add this code to your file. This will allow you to check that everything is set up correctly.
 
-[[[generic-python-installing-with-pip]]]
+--- code ---
+---
+language: python
+line_numbers: false
+---
+from guizero import App
+app = App(title="Hello world")
+app.display()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Save and then run the file. You should see a GUI window that looks like this:
+
+![A GUI with a title bar containing the text 'Hello world'. The rest of the window is blank.](images/first-app.png)
+
+Your window will look different depending on whether you are using Windows, Mac OS or Linux.
+
+--- /task ---

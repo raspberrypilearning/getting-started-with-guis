@@ -1,16 +1,86 @@
-## TextBox widget
+## Slider 
 
-A `TextBox` widgets allows the user to type in data, a bit like the GUI version of Python's `input()` function, which you may have used before. Here's how to add a `TextBox`:
+A slider lets users pick a value from a range of values easily. It works rather like moving a volume control slider.
 
-- Add `TextBox` to your `import` statement.
+This example will let you change the font size using a slider.
 
-- Add a `TextBox` widget to the GUI:
 
-    ```python
-    my_name = TextBox(app)
-    ```
+--- task ---
 
-- Run your code by pressing <kbd>F5</kbd>. You should see a small text box appear. The widget has an optional keyword argument `width`, which you can add if you wish to make the text box wider.
+Start a new file. Add `Slider` to the list of widgets at the start of your program.
 
-    ![TextBox widget](images/text-box.png)
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, Text, Slider
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Write a function called `change_text_size`. 
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 4
+---
+def change_text_size(slider_value):
+    sample_text.size = slider_value
+--- /code ---
+
+--- /task ---
+
+--- task ---
+Underneath the function, create the `App` and add a `Text`.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Text size")
+sample_text = Text(app, text="Some example text")
+app.display()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Create a `Slider` widget. When the slider is moved, the `change_text_size` function will be called, and given the current value of the slider.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 10
+line_highlights: 10-15
+---
+text_size = Slider(
+    app, 
+    command=change_text_size, 
+    start=10, 
+    end=80
+)
+app.display()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Save and run your code. You should see some example text. When the slider is moved, the text gets larger or smaller. 
+
+![GUI with text 'Some example text' and a slider from 10 to 80](images/slider-display.png)
+
+--- /task ---
+
+
 

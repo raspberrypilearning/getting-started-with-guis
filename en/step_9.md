@@ -1,32 +1,48 @@
-## Slider widget
+## Combo 
 
-A slider lets users pick a value from a range of values easily, since it works rather like moving a volume control slider.
+The combo widget allows you to select an option from a drop-down menu.
 
-- Above the code which creates the GUI app, write a function `change_text_size`.
 
-    ```python
-    def change_text_size(slider_value):
-        welcome_message.size = slider_value
-    ```
+--- task ---
 
-    This function will be called whenever the slider is moved, which is why it takes a parameter called `slider_value`. We must add a parameter inside the brackets so that when the slider is moved, its current value will **automatically** be sent to the function.
-    
-    The code inside the function uses the current slider value to set the `size` of the `welcome_message`.
+Start a new file. Add `Combo` to the list of widgets at the start of your program.
 
-- Add `Slider` to your `import` statement.
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, Combo
+--- /code ---
 
-- Add a `Slider` widget to the GUI:
+--- /task ---
 
-    ```python
-    text_size = Slider(app, command=change_text_size, start=10, end=80)
-    ```
 
-    The `command` argument specifies the function that will be called when the slider is moved — the `change_text_size` function we just created.
-    
-    The values of the `start` and `end` arguments determine the largest and smallest values of the slider. Since we are using it to change text size, we have specified these so that the font does not get too large or small — the smallest it can be is 10pt and the largest is 80pt.
+--- task ---
+Create the `App` and add a `Combo` widget.
 
-- Save your code and press <kbd>F5</kbd> to run it. Move the slider from side to side and watch the size of the `welcome_message` change.
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Movie chooser")
+film_choice = Combo(app, options=["Star Wars", "Frozen", "Lion King"])
+app.display()
+--- /code ---
 
-    ![Using a slider](images/slider-display.png)
+--- /task ---
+
+--- task ---
+
+Save and run your code. You should see a drop down box with three options. 
+
+![A GUI window with a drop down box containing the options Star Wars, Frozen and Lion King](images/combo.png)
+
+--- /task ---
+
+
 
 

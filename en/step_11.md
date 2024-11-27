@@ -1,27 +1,52 @@
-## Review 
+## ButtonGroup 
 
-You have now learnt how to use simple GUI widgets. This is the full code for this first part:
+The ButtonGroup widget allows you to create a group of radio buttons to choose one of a set of options.
 
-```python
-from guizero import App, Text, TextBox, PushButton, Slider, Picture
 
-def say_my_name():
-    welcome_message.value = my_name.value
+--- task ---
 
-def change_text_size(slider_value):
-    welcome_message.size = slider_value
+Start a new file. Add `ButtonGroup` to the list of widgets at the start of your program.
 
-app = App(title="Hello world")
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, ButtonGroup
+--- /code ---
 
-welcome_message = Text(app, text="Welcome to my app", size=40, font="Times new roman", color="lightblue")
-my_name = TextBox(app, width=30)
-update_text = PushButton(app, command=say_my_name, text="Display my name")
-text_size = Slider(app, command=change_text_size, start=10, end=80)
-my_cat = Picture(app, image="cat.gif")
+--- /task ---
 
+--- task ---
+Create the `App` and add a `ButtonGroup` widget.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Seat type")
+row_choice = ButtonGroup(
+    app, 
+    options=[ ["Front", "F"], ["Middle", "M"],["Back", "B"] ],
+    selected="M", 
+    horizontal=True, 
+)
 app.display()
-```
+--- /code ---
 
-You can also download a complete working example [here](resources/gui_test.py).
+--- /task ---
 
-Next we'll make a simple GUI for booking cinema tickets to look at some a little more complicated GUI widgets: combo menus, check boxes, and radio buttons.
+
+--- task ---
+
+Save and run your code. You should see three buttons: the 'Middle' option should be selected when the program begins, and you should be able to switch between the options.
+
+![Button Group demo](images/buttongroup.png)
+
+--- /task ---
+
+
+

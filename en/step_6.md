@@ -1,49 +1,85 @@
-## Text widget
+## PushButton 
 
-Probably the simplest widget you can add is the `Text` widget, which displays some text on the screen.
+A PushButton widget creates a button you can press. When the button is pressed, a function is called.
 
-- Add `Text` to the `import` statement (check back in the **Adding widgets** section if you are not sure how to do this).
+This example will display a joke, with a button to press to display the punch line.
 
-- Add a `Text` widget to the GUI (check back in the **Adding widgets** section if you are not sure where to put this code):
+--- task ---
 
-    ```python
-    welcome_message = Text(app, text="Welcome to my app")
-    ```
+Start a new file. Add `PushButton` to the list of widgets at the start of your program.
 
-    Here we have created a `Text` widget with the name `welcome_message`. The first __argument__ (in the brackets) tells the widget who its boss is! To be more specific, we are telling this `Text` widget that it will be controlled by the `app` object that we created earlier. The first argument given to any widget always tells it the name of its boss.
-
-- Run your code by pressing <kbd>F5</kbd>. You should see this text displayed on your GUI:
-
-    ![Text widget](images/app-welcome.png)
-
---- collapse ---
-
+--- code ---
 ---
-title: Something has gone wrong!
+language: python
+line_numbers: true
+line_number_start: 1
 ---
+from guizero import App, Text, PushButton
+--- /code ---
 
-Your code should look like this, with `Text` imported at the start and the `Text` widget called `welcome_message` created above `app.display()`:
+--- /task ---
 
-```python
-from guizero import App, Text
 
-app = App(title="Hello world")
+--- task ---
 
-welcome_message = Text(app, text="Welcome to my app")
+Write a function called `punch_line`:
 
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 4
+---
+def punch_line():
+    message.value = "Because the sea weed"
+--- /code ---
+
+--- /task ---
+
+
+--- task ---
+Underneath the function, create the `App` and add a `Text` widget containing the start of the joke.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Joke")
+message = Text(app, text="Why did the starfish blush?")
 app.display()
-```
+--- /code ---
 
---- /collapse ---
+--- /task ---
 
-Did you notice that we could tell the `Text` widget what content we wanted it to display by specifying `text="Welcome to my app"`? This is called a **keyword argument**, because we have specified the keyword `text` and the value we want. We can specify other keyword arguments too by just adding them after the `text` one and separating them by commas:
+--- task ---
 
-```python
-welcome_message = Text(app, text="Welcome to my app", size=40, font="Times New Roman", color="lightblue")
-```
+Create a `PushButton` widget. When the button is pressed, the `punch_line` function will be called.
 
-Here, we have used keyword arguments for the `size`, `font`, and `color` (note the American spelling!).
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 10
+line_highlights: 10-14
+---
+update_text = PushButton(
+    app, 
+    command=punch_line, 
+    text="Answer"
+)
+app.display()
+--- /code ---
 
-![Text widget](images/welcome-font.png)
+--- /task ---
 
-You can specify any font your computer has installed. Colours can be specified as colour names, but not every possible colour has a name, so you can also use Hex codes (e.g. `#ff0000`) to define colours.
+
+--- task ---
+
+Save and run your code. You should see a joke, and when you press the button, the punch line is displayed. 
+
+![GUI with text 'Why did the starfish blush?' and button labelled answer](images/display-joke.png)
+
+--- /task ---
+

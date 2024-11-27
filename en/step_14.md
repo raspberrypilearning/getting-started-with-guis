@@ -1,17 +1,16 @@
-## CheckBox widget
+## What can you do now?
 
-The `CheckBox` widget allows you to select or deselect an option.
+Try our [Shakespearean insult generator](https://projects.raspberrypi.org/en/projects/shakespearean-insult-generator/) project where you will write a Python script to generate insults, Elizabethan-style, and display them on a GUI.
 
-- Add `CheckBox` to your `import` statement.
+--- print-only --- 
 
-- Add a `CheckBox` widget to the GUI:
+![A GUI displaying a mild insult with a button underneath labelled 'Insult me again'](images/insult-in-gui.png)
 
-    ```python
-    vip_seat = CheckBox(app, text="VIP seat?", grid=[1,1], align="left")
-    ```
+--- /print-only ---
 
-- You can also add a `Text` widget in grid `[0,1]` to explain what the checkbox is for.
+Or, why not try out another [Python](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) project.
 
-- Press <kbd>F5</kbd> to run your code. You should see the `CheckBox`, you should be able to tick and untick it, and if you've added a `Text` widget as a label, this should be visible next to the check box.
 
-    ![CheckBox demo](images/checkbox-demo.png)
+
+
+

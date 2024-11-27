@@ -1,19 +1,64 @@
-## A new app
+## Get a value
 
-- Create a new file and save it as `gui_test2.py`.
+You can get the value of any widget, for example the text in a TextBox or the option selected in a Combo.
 
-- Add a line of code at the start of your file to import the `App` class from the `guizero` module:
 
-    ```python
-    from guizero import App
-    ```
+--- task ---
 
-- Now add two more lines of code to create an `App` object and display it on the screen:
+Start a new file. Add `TextBox`, `Text` and `PushButton` to the list of widgets at the start of your program.
 
-    ```python
-    app = App(title="My second GUI app", width=300, height=200, layout="grid")
-    app.display()
-    ```
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 1
+---
+from guizero import App, TextBox, Text, PushButton
+--- /code ---
 
-    Note that we have used some new keyword arguments: `width` and `height` set the size of the app window, and `layout` allows us to set out our widgets on an invisible grid.
+--- /task ---
+
+--- task ---
+Create the `App` and add all three widgets.
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+app = App(title="Value demo")
+input_box = TextBox(app)
+output_text = Text(app, text="???")
+button = PushButton(app, text="Display it", command=update_text)
+app.display()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+Above the `App`, write a function `update_text` which takes the value that was written in the text box and writes it in the output box. 
+
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 8
+---
+def update_text():
+    output_text.value = input_box.value
+--- /code ---
+
+--- /task ---
+
+
+--- task ---
+
+Save and run your code. Type a message in the TextBox, then press the button. The message should be copied to the Text widget.
+
+![A GUI with a textbox, some text and a button labelled 'Display it'. The word 'Hello' is written in both the textbox and the text.](images/value-demo.png)
+
+--- /task ---
+
+
 
